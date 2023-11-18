@@ -1,0 +1,586 @@
+:root {
+    --primaryColor: #09C5A3;
+    --secondaryColor: #00A98B;
+}
+
+/* Therapist Page */
+#wrapper #bannerTherapist {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    width: 100%;
+    height: 40vh;
+    background: url('../images/hero2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#wrapper #bannerTherapist #overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#wrapper #bannerTherapist #overlay #therapistHeader {
+    padding: 5rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#wrapper #bannerTherapist #overlay #therapistHeader h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+#wrapper #therapistListSec {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    padding: 10rem 7rem 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#wrapper #therapistListSec h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+#wrapper #therapistListSec h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+#wrapper #therapistListSec #therapistList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
+    width: 30%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px -2px rgba(0, 0, 0, 0.1);
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard:nth-child(1),
+#wrapper #therapistListSec #therapistList .therapistCard:nth-child(2),
+#wrapper #therapistListSec #therapistList .therapistCard:nth-child(3) {
+    scroll-margin-top: 8rem;
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard .cardContent {
+    padding: 2.5rem 2rem;
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard .cardContent h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard .cardContent p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: black;
+    width: 100%;
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard .cardContent div {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard .cardContent div .therapistBtn {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 18px 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: var(--primaryColor);
+    border: solid var(--primaryColor) 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard .cardContent div .therapistBtn:hover {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+}
+
+#wrapper #therapistListSec #therapistList .therapistCard .cardContent div .therapistBtn:disabled {
+    background-color: #8b8b8b;
+    border-color: #8b8b8b;
+    color: #c4c4c4;
+}
+
+#wrapper #cartExistModal {
+    display: none;
+    position: fixed;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 15%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10000;
+}
+
+#wrapper #cartExistModal #modalContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+    width: 60%;
+    -webkit-animation-name: animatetop;
+    -moz-animation-name: animatetop;
+    -ms-animation-name: animatetop;
+    -o-animation-name: animatetop;
+    animation-name: animatetop;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-moz-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-ms-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-o-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#wrapper #cartExistModal #modalContent #closeCart {
+    position: absolute;
+    right: 3rem;
+    color: black;
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #cartExistModal #modalContent #closeCart:hover {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+#wrapper #cartExistModal #modalContent #alertIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #dfbb46;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+#wrapper #cartExistModal #modalContent #alertIcon i {
+    color: white;
+    font-size: 2.2rem;
+}
+
+#wrapper #cartExistModal #modalContent h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    margin: 0;
+}
+
+#wrapper #cartExistModal #modalContent p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+#wrapper #cartExistModal #modalContent p a {
+    color: var(--primaryColor);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#wrapper #therapySessionExistModal {
+    display: none;
+    position: fixed;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 15%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10000;
+}
+
+#wrapper #therapySessionExistModal #modalContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+    width: 60%;
+    -webkit-animation-name: animatetop;
+    -moz-animation-name: animatetop;
+    -ms-animation-name: animatetop;
+    -o-animation-name: animatetop;
+    animation-name: animatetop;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+}
+
+#wrapper #therapySessionExistModal #modalContent #closeSession {
+    position: absolute;
+    right: 3rem;
+    color: black;
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #therapySessionExistModal #modalContent #closeSession:hover {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+#wrapper #therapySessionExistModal #modalContent #alertIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F4CF53;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+#wrapper #therapySessionExistModal #modalContent #alertIcon i {
+    color: white;
+    font-size: 2.2rem;
+}
+
+#wrapper #therapySessionExistModal #modalContent h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    margin: 0;
+}
+
+#wrapper #therapySessionExistModal #modalContent p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+#wrapper #therapySessionExistModal #modalContent p span {
+    color: var(--primaryColor);
+    font-weight: 700;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #therapySessionExistModal #modalContent p span:hover {
+    color: var(--secondaryColor);
+}
+
+#wrapper #notAuthorizedModal {
+    display: none;
+    position: fixed;
+    margin-top: 12vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+#wrapper #notAuthorizedModal #modalContent {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 2rem;
+    width: 85%;
+    border-bottom: 5px solid var(--primaryColor);
+    -webkit-animation: animatetopAuthorized forwards 0.8s ease-in-out;
+    -moz-animation: animatetopAuthorized forwards 0.8s ease-in-out;
+    -ms-animation: animatetopAuthorized forwards 0.8s ease-in-out;
+    -o-animation: animatetopAuthorized forwards 0.8s ease-in-out;
+    animation: animatetopAuthorized forwards 0.8s ease-in-out;
+    box-shadow: 0px 0px 25px -2px rgba(0, 0, 0, 0.1);
+}
+
+#wrapper #notAuthorizedModal #modalContent #closeAuthorized {
+    position: absolute;
+    right: 3rem;
+    color: black;
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #notAuthorizedModal #modalContent #closeAuthorized:hover {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+#wrapper #notAuthorizedModal #modalContent #authorizedModalMessage {
+    max-width: 85%;
+}
+
+#wrapper #notAuthorizedModal #modalContent #authorizedModalMessage h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: black;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+#wrapper #notAuthorizedModal #modalContent #authorizedModalMessage p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+#wrapper #notAuthorizedModal #modalContent #authorizedModalMessage p a {
+    color: var(--primaryColor);
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #notAuthorizedModal #modalContent #authorizedModalMessage p a:hover {
+    color: var(--secondaryColor);
+}
+
+@-webkit-keyframes animatetopAuthorized {
+    from {
+        top: -50%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes animatetopAuthorized {
+    from {
+        top: -50%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes animatetopAuthorized {
+    from {
+        top: -50%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes animatetopAuthorized {
+    from {
+        top: -50%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetopAuthorized {
+    from {
+        top: -50%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}

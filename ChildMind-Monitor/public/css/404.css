@@ -1,0 +1,76 @@
+:root {
+    --primaryColor: #09C5A3;
+    --secondaryColor: #00A98B;
+}
+
+/* 404 Page */
+#wrapper #ErrorContainer {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    width: 100%;
+    text-align: center;
+    padding: 5rem 7rem;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#wrapper #ErrorContainer #ErrorHeading {
+    Display: flex;
+    flex-direction: row;
+    padding-bottom: 1.5rem;
+    justify-content: center;
+
+}
+
+#wrapper #ErrorContainer #ErrorHeading h1 {
+    font-size: 15.5rem;
+    color: var(--primaryColor);
+    font-weight: 600;
+
+}
+
+#wrapper #ErrorContainer #ErrorHeading img {
+    width: 20rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+}
+
+#wrapper #ErrorContainer h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+#wrapper #ErrorContainer p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#wrapper #ErrorContainer #returnSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
+    width: 100%;
+}
+
+#wrapper #ErrorContainer #returnSection a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    border: 1px solid var(--primaryColor);
+    border-radius: 500px;
+    padding: 16px 36px;
+    width: 15%;
+    background: var(--primaryColor);
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+}

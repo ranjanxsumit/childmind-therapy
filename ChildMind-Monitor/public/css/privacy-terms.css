@@ -1,0 +1,39 @@
+:root {
+    --primaryColor: #09C5A3;
+    --secondaryColor: #00A98B;
+}
+
+/* Privacy Policy & Terms and Conditions */
+#wrapper #defaultContainer {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    width: 100%;
+    padding: 5rem 7rem;
+    color: black;
+}
+
+#wrapper #defaultContainer h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#wrapper #defaultContainer p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+
+#wrapper #defaultContainer ul {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+#wrapper #defaultContainer ul li {
+    line-height: 2rem;
+}
+
+#wrapper #defaultContainer a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--primaryColor);
+}

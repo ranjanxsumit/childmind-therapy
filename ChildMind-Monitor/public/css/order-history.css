@@ -1,0 +1,845 @@
+:root {
+    --primaryColor: #09C5A3;
+    --secondaryColor: #00A98B;
+}
+
+/* Order History Page */
+#wrapper #orderHistoryHeroContainer {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    width: 100%;
+    height: 40vh;
+    background: url('../images/orderhistory.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#wrapper #orderHistoryHeroContainer #overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+#wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero {
+    padding: 5rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+#wrapper #noOrderHistorySummary {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    padding: 10rem 7rem 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#wrapper #noOrderHistorySummary #noOrderMessage {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: black;
+}
+
+#wrapper #noOrderHistorySummary #noOrderMessage a {
+    font-weight: 700;
+    color: var(--primaryColor);
+    text-decoration: none;
+    border-bottom: 2px solid var(--primaryColor);
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #noOrderHistorySummary #noOrderMessage a:hover {
+    color: var(--secondaryColor);
+    border-bottom: 2px solid var(--secondaryColor);
+}
+
+#wrapper #orderToolbar {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10rem 7rem 5rem;
+    align-items: center;
+}
+
+#wrapper #orderToolbar p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    color: black;
+    width: 20%;
+}
+
+#wrapper #orderToolbar p #boldResults {
+    font-weight: 700;
+}
+
+#wrapper #orderToolbar #searchForm {
+    width: 65%;
+    margin: 0 1.5rem;
+}
+
+#wrapper #orderToolbar #searchForm #searchbar {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    padding: 1.5rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 500px;
+    box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+#wrapper #orderToolbar #refundBtn {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 18px;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: white;
+    background-color: var(--primaryColor);
+    border: solid var(--primaryColor) 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #orderToolbar #refundBtn:hover {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+}
+
+#wrapper #orderTableContainer {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    display: none;
+    width: 100%;
+    padding: 0 7rem 5rem;
+    border-collapse: collapse;
+}
+
+#wrapper #orderTableContainer #orderTable {
+    width: 100%;
+    border-spacing: 0 1.3rem;
+}
+
+#wrapper #orderTableContainer #orderTable thead #tableHeader {
+    background-color: transparent;
+}
+
+#wrapper #orderTableContainer #orderTable thead #tableHeader th {
+    padding: 0 1rem 1rem 1rem;
+}
+
+#wrapper #orderTableContainer #orderTable thead #tableHeader .tHead {
+    cursor: pointer;
+}
+
+#wrapper #orderTableContainer #orderTable thead #tableHeader th i {
+    padding-left: 1rem;
+}
+
+#wrapper #orderTableContainer #orderTable thead th,
+#wrapper #orderTableContainer #orderTable tbody td {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+#wrapper #orderTableContainer #orderTable tbody td {
+    padding: 1.5rem 1rem;
+}
+
+#wrapper #orderTableContainer #orderTable tbody .tableRows {
+    background: white;
+    box-shadow: 0px 0px 16px -7px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+#wrapper #orderTableContainer #orderTable tbody .tableRows td.activeStatus {
+    color: var(--primaryColor);
+}
+
+#wrapper #orderTableContainer #orderTable tbody .tableRows td.expiredStatus {
+    color: #DD1A00;
+}
+
+#wrapper #orderTableContainer #orderTable tbody .tableRows td:nth-child(7) {
+    width: 12%;
+}
+
+#wrapper #orderTableContainer #orderTable tbody .tableRows td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 2rem;
+}
+
+#wrapper #orderTableContainer #orderTable tbody .tableRows td:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-right: 2rem;
+    width: 13%;
+}
+
+#orderRefundModal {
+    display: none;
+    position: fixed;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10000;
+}
+
+#orderRefundModal #modalContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 3rem;
+    width: 60%;
+    -webkit-animation-name: animatetopRefund;
+    -moz-animation-name: animatetopRefund;
+    -ms-animation-name: animatetopRefund;
+    -o-animation-name: animatetopRefund;
+    animation-name: animatetopRefund;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animatetopRefund {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-moz-keyframes animatetopRefund {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-ms-keyframes animatetopRefund {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-o-keyframes animatetopRefund {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetopRefund {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#orderRefundModal #modalContent #modalHeader {
+    display: none;
+    position: absolute;
+    right: 3rem;
+}
+
+#orderRefundModal #modalContent #modalHeader #closeRefundIcon {
+    color: black;
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#orderRefundModal #modalContent #modalHeader #closeRefundIcon:hover,
+#orderRefundModal #modalContent #modalHeader #closeRefundIcon:focus {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+#orderRefundModal #modalContent #refundErrorMessage {
+    display: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    margin: 0;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+#orderRefundModal #modalContent h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: black;
+    padding-bottom: 1.5rem;
+    margin: 0;
+}
+
+#orderRefundModal #modalContent p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+#orderRefundModal #modalContent p a {
+    font-weight: 700;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+#orderRefundModal #modalContent p #refundTherapist,
+#orderRefundModal #modalContent p #refundPrice {
+    font-weight: 700;
+    color: var(--primaryColor);
+}
+
+#orderRefundModal #modalContent #refundButtonsSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+}
+
+#orderRefundModal #modalContent #refundButtonsSec #closeRefund {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    padding-right: 2rem;
+    border: none;
+    background: transparent;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#orderRefundModal #modalContent #refundButtonsSec #closeRefund:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#orderRefundModal #modalContent #refundButtonsSec #orderRefundBtn {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 14px;
+    width: 20%;
+    color: white;
+    background-color: var(--primaryColor);
+    border: solid var(--primaryColor) 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#orderRefundModal #modalContent #refundButtonsSec #orderRefundBtn:hover {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+}
+
+#signupSuccessModal {
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    -webkit-animation-name: animateModal;
+    -moz-animation-name: animateModal;
+    -ms-animation-name: animateModal;
+    -o-animation-name: animateModal;
+    animation-name: animateModal;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+    z-index: 99999;
+}
+
+#signupSuccessModal #signupSuccessContainer {
+    width: 7rem;
+    height: 8rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#signupSuccessModal #signupSuccessContainer #signupSuccessBg {
+    width: 100%;
+    height: calc(100% - 1.25rem);
+    background: linear-gradient(to bottom right, #5de593, #41d67c);
+    box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+        0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    transform: scale(0.8);
+    border-radius: 50%;
+    animation: animateContainer 0.75s ease-out forwards 0.75s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#signupSuccessModal #signupSuccessContainer #signupSuccessBg svg {
+    width: 50%;
+    transform: translateY(0.25rem);
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: animateCheck 0.35s forwards 1.25s ease-out;
+}
+
+@-webkit-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-moz-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-ms-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-o-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-webkit-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-moz-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-ms-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-o-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-webkit-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-moz-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-ms-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-o-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}

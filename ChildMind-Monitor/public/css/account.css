@@ -1,0 +1,947 @@
+:root {
+    --primaryColor: #09C5A3;
+    --secondaryColor: #00A98B;
+}
+
+/* Account Page */
+#wrapper #banner {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    width: 100%;
+    height: 40vh;
+    background: url('../images/placeholder-background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#wrapper #banner #overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#wrapper #banner #overlay #profileHeader {
+    padding: 5rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#wrapper #banner #overlay #profileHeader h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+#wrapper #banner #overlay #profileHeader #editProfileBtn {
+    display: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 18px 40px;
+    text-decoration: none;
+    min-width: 10rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--primaryColor);
+    border: solid var(--primaryColor) 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #banner #overlay #profileHeader #editProfileBtn:hover {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+}
+
+#wrapper #profileSummary {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    padding: 5rem 7rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#wrapper #profileSummary #profileImageSec {
+    width: 25%;
+}
+
+#wrapper #profileSummary #profileImageSec #profileImgContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#wrapper #profileSummary #profileImageSec #profileImgContainer input[type="file"] {
+    display: none;
+}
+
+#wrapper #profileSummary #profileImageSec #profileImgContainer #profileImage {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 25px;
+    box-shadow: 0px 4px 30px -5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.8s;
+    -moz-transition: all ease-in-out 0.8s;
+    -ms-transition: all ease-in-out 0.8s;
+    -o-transition: all ease-in-out 0.8s;
+    transition: all ease-in-out 0.8s;
+}
+
+#wrapper #profileSummary #profileDesc {
+    width: 75%;
+    padding-left: 5rem;
+    align-self: center;
+}
+
+#wrapper #profileSummary #profileDesc #profileImageSecMob {
+    display: none;
+    width: 100%;
+}
+
+#wrapper #profileSummary #profileDesc #profileImageSecMob #profileImgContainerMob {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#wrapper #profileSummary #profileDesc #profileImageSecMob #profileImgContainerMob #profileImageMob {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 25px;
+    box-shadow: 0px 4px 30px -5px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all ease-in-out 0.8s;
+    -moz-transition: all ease-in-out 0.8s;
+    -ms-transition: all ease-in-out 0.8s;
+    -o-transition: all ease-in-out 0.8s;
+    transition: all ease-in-out 0.8s;
+}
+
+#wrapper #profileSummary #profileDesc #displayFullname {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+    padding-bottom: 0.8rem;
+}
+
+#wrapper #profileSummary #profileDesc #displayUsername {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+#wrapper #profileSummary #profileDesc p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 1rem;
+}
+
+#wrapper #profileSummary #profileDesc #buttonSec {
+    display: flex;
+    flex-direction: row;
+}
+
+#wrapper #profileSummary #profileDesc #buttonSec #deleteAccount,
+#wrapper #profileSummary #profileDesc #mobDeleteAccount {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 18px 40px;
+    margin-right: 1.5rem;
+    min-width: 15rem;
+    color: white;
+    background-color: #DD1A00;
+    border: solid 2px #DD1A00;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #profileSummary #profileDesc #mobDeleteAccount {
+    display: none;
+}
+
+#wrapper #profileSummary #profileDesc #buttonSec #deleteAccount:hover,
+#wrapper #profileSummary #profileDesc #mobDeleteAccount:hover {
+    background-color: #c41700;
+    border: solid 2px #c41700;
+}
+
+#wrapper #profileSummary #profileDesc #buttonSec #saveChanges {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 18px 40px;
+    min-width: 15rem;
+    color: white;
+    background-color: var(--primaryColor);
+    border: solid var(--primaryColor) 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #profileSummary #profileDesc #buttonSec #saveChanges:hover {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+}
+
+#wrapper #profileSummary #profileDesc #contactInfoMob {
+    display: none;
+    padding: 1.5rem 5rem;
+    margin: 1rem 5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+#wrapper #profileSummary #profileDesc #contactInfoMob div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 0;
+}
+
+#wrapper #profileSummary #profileDesc #contactInfoMob div i {
+    font-size: 1.8rem;
+    padding-right: 1.5rem;
+    color: black;
+}
+
+#wrapper #profileSummary #profileDesc #contactInfoMob div span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+}
+
+#wrapper #profileSummary #profileDesc #joinedDateMob {
+    display: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+#wrapper #profileDetails {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    padding: 0 7rem 5rem;
+    width: 100%;
+}
+
+#wrapper #profileDetails #profileForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#wrapper #profileDetails #profileForm .form-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+#wrapper #profileDetails #profileForm .form-row.col-6 {
+    width: 48%;
+}
+
+#wrapper #profileDetails #profileForm .form-row.therapistOptions {
+    display: none;
+}
+
+#wrapper #profileDetails #profileForm .form-row .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper #profileDetails #profileForm .form-row .form-group label {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+#wrapper #profileDetails #profileForm .form-row .form-group input {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    opacity: 1;
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+}
+
+#wrapper #profileDetails #profileForm .form-row .input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+#wrapper #profileDetails #profileForm .form-row .input-group input {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    opacity: 1;
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+    width: 100%;
+    margin-right: -3rem;
+}
+
+#wrapper #profileDetails #profileForm .form-row .input-group-addon {
+    align-self: center;
+    margin-right: 1.5rem;
+}
+
+#usernameErrorMessage,
+#emailErrorMessage,
+#phoneErrorMessage,
+#validationErrorMessage {
+    display: none;
+    font-family: 'Nunito', sans-serif;
+    color: red;
+    font-size: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+#profileSuccessModal {
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    -webkit-animation-name: animateModal;
+    -moz-animation-name: animateModal;
+    -ms-animation-name: animateModal;
+    -o-animation-name: animateModal;
+    animation-name: animateModal;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+    z-index: 99999;
+}
+
+#profileSuccessModal #profileSuccessContainer {
+    width: 7rem;
+    height: 8rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#profileSuccessModal #profileSuccessContainer #profileSuccessBg {
+    width: 100%;
+    height: calc(100% - 1.25rem);
+    background: linear-gradient(to bottom right, #5de593, #41d67c);
+    box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+        0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    transform: scale(0.8);
+    border-radius: 50%;
+    animation: animateContainer 0.75s ease-out forwards 0.75s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#profileSuccessModal #profileSuccessContainer #profileSuccessBg svg {
+    width: 50%;
+    transform: translateY(0.25rem);
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: animateCheck 0.35s forwards 1.25s ease-out;
+}
+
+@-webkit-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-moz-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-ms-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-o-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-webkit-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-moz-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-ms-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-o-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-webkit-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-moz-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-ms-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-o-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#deleteAccountModal {
+    display: none;
+    position: fixed;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10000;
+}
+
+#deleteAccountModal #modalContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 3rem;
+    width: 60%;
+    -webkit-animation-name: animatetop;
+    -moz-animation-name: animatetop;
+    -ms-animation-name: animatetop;
+    -o-animation-name: animatetop;
+    animation-name: animatetop;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-moz-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-ms-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-o-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#deleteAccountModal #modalContent h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 1.5rem;
+    margin: 0;
+}
+
+#deleteAccountModal #modalContent p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+#deleteAccountModal #modalContent #deleteButtonsSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+}
+
+#deleteAccountModal #modalContent #deleteButtonsSec #closeDelete {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    padding-right: 2rem;
+    border: none;
+    background: transparent;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#deleteAccountModal #modalContent #deleteButtonsSec #closeDelete:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#deleteAccountModal #modalContent #deleteButtonsSec #deleteAccountBtn {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 14px;
+    width: 20%;
+    color: white;
+    background-color: #DD1A00;
+    border: solid #DD1A00 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#deleteAccountModal #modalContent #deleteButtonsSec #deleteAccountBtn:hover {
+    border: 2px solid #c41700;
+    background-color: #c41700;
+}
+
+#deleteAccountModal #modalContent #deleteAccountErrorMessage {
+    display: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    margin: 0;
+    color: red;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,1202 @@
+:root {
+    --primaryColor: #09C5A3;
+    --secondaryColor: #00A98B;
+}
+
+/* Admin Dashboard Page */
+#wrapper #dashboardHeroContainer {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    width: 100%;
+    height: 40vh;
+    background: url('../images/hero2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#wrapper #dashboardHeroContainer #overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+#wrapper #dashboardHeroContainer #overlay #dashboardHero {
+    padding: 5rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#wrapper #dashboardHeroContainer #overlay #dashboardHero h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+#wrapper #dashboardToolbar {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5rem 7rem;
+    align-items: center;
+}
+
+#wrapper #dashboardToolbar p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    color: black;
+    width: 20%;
+}
+
+#wrapper #dashboardToolbar p #boldResults {
+    font-weight: 700;
+}
+
+#wrapper #dashboardToolbar #searchForm {
+    width: 65%;
+    margin: 0 1.5rem;
+}
+
+#wrapper #dashboardToolbar #searchForm #searchbar {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    padding: 1.5rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 500px;
+    box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+#wrapper #dashboardToolbar #createUser {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 18px;
+    text-decoration: none;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--primaryColor);
+    border: solid var(--primaryColor) 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#wrapper #dashboardToolbar #createUser:hover {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+}
+
+#wrapper #tableContainer {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    width: 100%;
+    padding: 0 7rem 5rem;
+    border-collapse: collapse;
+}
+
+#wrapper #tableContainer #dashboardTable {
+    width: 100%;
+    border-spacing: 0 1.3rem;
+}
+
+#wrapper #tableContainer #dashboardTable thead #tableHeader {
+    background-color: transparent;
+}
+
+#wrapper #tableContainer #dashboardTable thead #tableHeader th {
+    padding-bottom: 1rem;
+}
+
+#wrapper #tableContainer #dashboardTable thead #tableHeader .tHead {
+    cursor: pointer;
+}
+
+#wrapper #tableContainer #dashboardTable thead #tableHeader th i {
+    padding-left: 1rem;
+}
+
+#wrapper #tableContainer #dashboardTable thead th,
+#wrapper #tableContainer #dashboardTable tbody td {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+#wrapper #tableContainer #dashboardTable tbody .tableRows {
+    background: white;
+    box-shadow: 0px 0px 16px -7px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#wrapper #tableContainer #dashboardTable tbody .tableRows td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#wrapper #tableContainer #dashboardTable tbody .tableRows td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings,
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings.inactive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    -webkit-transition: all ease-in-out 0.7s;
+    -moz-transition: all ease-in-out 0.7s;
+    -ms-transition: all ease-in-out 0.7s;
+    -o-transition: all ease-in-out 0.7s;
+    transition: all ease-in-out 0.7s;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings.active {
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    -ms-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    background: white;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon {
+    margin-left: -1.5rem;
+    cursor: pointer;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon.inactive {
+    margin-left: -1.5rem;
+    -webkit-animation-name: animateSlideClose;
+    -moz-animation-name: animateSlideClose;
+    -ms-animation-name: animateSlideClose;
+    -o-animation-name: animateSlideClose;
+    animation-name: animateSlideClose;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon.active {
+    margin: 0;
+    padding-left: 1rem;
+    -webkit-animation-name: animateSlide;
+    -moz-animation-name: animateSlide;
+    -ms-animation-name: animateSlide;
+    -o-animation-name: animateSlide;
+    animation-name: animateSlide;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animateSlideClose {
+    from {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+
+    to {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes animateSlideClose {
+    from {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+
+    to {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes animateSlideClose {
+    from {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+
+    to {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes animateSlideClose {
+    from {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+
+    to {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+}
+
+@keyframes animateSlideClose {
+    from {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+
+    to {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes animateSlide {
+    from {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+
+    to {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes animateSlide {
+    from {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+
+    to {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes animateSlide {
+    from {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+
+    to {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes animateSlide {
+    from {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+
+    to {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animateSlide {
+    from {
+        padding-left: 0;
+        margin-left: -1.5rem;
+        opacity: 0;
+    }
+
+    to {
+        padding-left: 1rem;
+        margin: 0;
+        opacity: 1;
+    }
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i:nth-child(1) {
+    z-index: 2;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i:nth-child(2) {
+    z-index: 1;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i:nth-child(2):hover {
+    opacity: 0.6;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i:nth-child(3) {
+    z-index: 0;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i:nth-child(3):hover {
+    opacity: 0.6;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i:first-child:before {
+    transform: rotate(0deg);
+    -webkit-transition: all ease-in-out 0.7s;
+    -moz-transition: all ease-in-out 0.7s;
+    -ms-transition: all ease-in-out 0.7s;
+    -o-transition: all ease-in-out 0.7s;
+    transition: all ease-in-out 0.7s;
+}
+
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i:first-child:hover::before,
+#wrapper #tableContainer #dashboardTable tbody td .dashSettings i:first-child.active::before {
+    color: var(--primaryColor);
+    -webkit-transform: rotate(250deg);
+    -moz-transform: rotate(250deg);
+    -ms-transform: rotate(250deg);
+    -o-transform: rotate(250deg);
+    transform: rotate(250deg);
+}
+
+#createUserModal,
+#editUserModal,
+#deleteUserModal {
+    display: none;
+    position: fixed;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10000;
+}
+
+#createUserModal,
+#editUserModal {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#deleteUserModal {
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+#createUserModal #modalContent,
+#editUserModal #modalContent,
+#deleteUserModal #modalContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 3rem;
+    width: 60%;
+    -webkit-animation-name: animatetop;
+    -moz-animation-name: animatetop;
+    -ms-animation-name: animatetop;
+    -o-animation-name: animatetop;
+    animation-name: animatetop;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+}
+
+#createUserModal #modalContent #modalHeader #closeCreate,
+#editUserModal #modalContent #modalHeader #closeEdit {
+    color: black;
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#createUserModal #modalContent #modalHeader #closeCreate:hover,
+#createUserModal #modalContent #modalHeader #closeCreate:focus,
+#editUserModal #modalContent #modalHeader #closeEdit:hover,
+#editUserModal #modalContent #modalHeader #closeEdit:focus {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-moz-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-ms-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@-o-keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#createUserModal #modalContent #formContainer #createUserForm,
+#editUserModal #modalContent #formContainer #editUserForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row,
+#editUserModal #modalContent #formContainer #editUserForm .form-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row.col-6,
+#editUserModal #modalContent #formContainer #editUserForm .form-row.col-6 {
+    width: 48%;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row.therapistOptions,
+#editUserModal #modalContent #formContainer #editUserForm .form-row.therapistOptions {
+    display: none;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group,
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group label,
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group label {
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group input,
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group input {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    opacity: 1;
+    font-size: 14px;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group select,
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group select {
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    background-position: calc(100% - 2rem) center !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    opacity: 1;
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+    transition: all ease-in-out 0.3s;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group select option,
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group select option {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group select::selection,
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group select::selection {
+    border-radius: 0px;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group select option[value="patient"],
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group select option[value="therapist"],
+#createUserModal #modalContent #formContainer #createUserForm .form-row .form-group select option[value="admin"],
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group select option[value="patient"],
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group select option[value="therapist"],
+#editUserModal #modalContent #formContainer #editUserForm .form-row .form-group select option[value="admin"] {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .input-group,
+#editUserModal #modalContent #formContainer #editUserForm .input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .input-group input,
+#editUserModal #modalContent #formContainer #editUserForm .input-group input {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    opacity: 1;
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+    width: 100%;
+    margin-right: -3rem;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm .input-group .input-group-addon,
+#editUserModal #modalContent #formContainer #editUserForm .input-group .input-group-addon {
+    align-self: center;
+    margin-right: 1.5rem;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm #createUserBtn,
+#editUserModal #modalContent #formContainer #editUserForm #editUserBtn {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 18px;
+    width: 100%;
+    color: white;
+    background-color: var(--primaryColor);
+    border: solid var(--primaryColor) 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#createUserModal #modalContent #formContainer #createUserForm #createUserBtn:hover,
+#editUserModal #modalContent #formContainer #editUserForm #editUserBtn:hover {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+}
+
+#createUserModal #modalContent #formContainer #createUserForm #createUserErrorMessage,
+#editUserModal #modalContent #formContainer #editUserForm #editUserErrorMessage,
+#deleteUserModal #modalContent #deleteUserErrorMessage {
+    display: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    margin: 0;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+#deleteUserModal #modalContent h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 1.5rem;
+    margin: 0;
+}
+
+#deleteUserModal #modalContent h2 #deleteUsername {
+    color: var(--primaryColor);
+}
+
+#deleteUserModal #modalContent p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+#deleteUserModal #modalContent #deleteButtonsSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+}
+
+#deleteUserModal #modalContent #deleteButtonsSec #closeDelete {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    padding-right: 2rem;
+    border: none;
+    background: transparent;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#deleteUserModal #modalContent #deleteButtonsSec #closeDelete:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#deleteUserModal #modalContent #deleteButtonsSec #deleteUserBtn {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 14px;
+    width: 20%;
+    color: white;
+    background-color: #DD1A00;
+    border: solid #DD1A00 2px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+#deleteUserModal #modalContent #deleteButtonsSec #deleteUserBtn:hover {
+    border: 2px solid #c41700;
+    background-color: #c41700;
+}
+
+#dashboardSuccessModal {
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    -webkit-animation-name: animateModal;
+    -moz-animation-name: animateModal;
+    -ms-animation-name: animateModal;
+    -o-animation-name: animateModal;
+    animation-name: animateModal;
+    -webkit-animation-duration: 1s ease-in-out;
+    -moz-animation-duration: 1s ease-in-out;
+    -ms-animation-duration: 1s ease-in-out;
+    -o-animation-duration: 1s ease-in-out;
+    animation-duration: 1s;
+    z-index: 99999;
+}
+
+#dashboardSuccessModal #dashboardSuccessContainer {
+    width: 7rem;
+    height: 8rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dashboardSuccessModal #dashboardSuccessContainer #dashboardSuccessBg {
+    width: 100%;
+    height: calc(100% - 1.25rem);
+    background: linear-gradient(to bottom right, #5de593, #41d67c);
+    box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+        0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    transform: scale(0.8);
+    border-radius: 50%;
+    animation: animateContainer 0.75s ease-out forwards 0.75s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#dashboardSuccessModal #dashboardSuccessContainer #dashboardSuccessBg svg {
+    width: 50%;
+    transform: translateY(0.25rem);
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: animateCheck 0.35s forwards 1.25s ease-out;
+}
+
+.hiddenRow {
+    display: none;
+}
+
+@-webkit-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-moz-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-ms-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-o-keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@keyframes animateModal {
+    from {
+        background: rgba(0, 0, 0, 0);
+        -webkit-backdrop-filter: blur(0);
+        -moz-backdrop-filter: blur(0);
+        -ms-backdrop-filter: blur(0);
+        -o-backdrop-filter: blur(0);
+        backdrop-filter: blur(0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+}
+
+@-webkit-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-moz-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-ms-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-o-keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@keyframes animateContainer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    43.75% {
+        transform: scale(1.15);
+        box-shadow: 0px 0px 0px 43.334px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 65px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    62.5% {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 21.667px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    81.25% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset,
+            0px 0px 0px 0px rgba(255, 255, 255, 0.25) inset;
+    }
+}
+
+@-webkit-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-moz-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-ms-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-o-keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animateCheck {
+    from {
+        stroke-dashoffset: 80;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}

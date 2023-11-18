@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="COMP 2800 - ChildMind-Monitor" />
+
+    <title>ChildMind-Monitor - My Account</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/410249dbdb.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/edit-account.css" />
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="headMobile">
+            <nav class="nav-container">
+                <p id="footerNav">ChildMind-Monitor 2023 © COMP 2800</p>
+
+                <div class="nav-menu" id="nav-menu">
+                    <div id="logoMob">
+                        <a href="/">
+                            <img src="../images/logo.svg" alt="Logo">
+                            <h2>ChildMind-Monitor</h2>
+                        </a>
+                    </div>
+
+                    <i class="bi bi-x nav-close" id="nav-close"></i>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <i class="bi bi-house-door nav-icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/therapists" class="nav-link">
+                                <i class="fa-solid fa-heart-pulse nav-icon"></i>Therapists
+                            </a>
+                        </li>
+                        <li class="nav-item isPatient">
+                            <a href="/checkout" class="nav-link">
+                                <i class="bi bi-bag-check nav-icon"></i>Checkout
+                            </a>
+                        </li>
+                        <li class="nav-item isPatient">
+                            <a href="/order-history" class="nav-link">
+                                <i class="bi bi-clock-history nav-icon"></i>Order History
+                            </a>
+                        </li>
+                        <li class="nav-item isAdmin">
+                            <a href="/admin-dashboard" class="nav-link">
+                                <i class="fa-solid fa-users-gear nav-icon"></i>Admin Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item hasActiveSession">
+                            <a href="/chat-session" class="nav-link">
+                                <i class="bi bi-chat-left-dots nav-icon"></i>Chat Session
+                            </a>
+                        </li>
+                        <li class="nav-item isTherapist">
+                            <a href="/my-patients" class="nav-link">
+                                <i class="bi bi-people nav-icon"></i>My Patients
+                            </a>
+                        </li>
+                        <li class="nav-item isLoggedIn">
+                            <a href="/userprofile" class="nav-link">
+                                <i class="bi bi-person-circle nav-icon"></i>Account
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/#contactSec" class="nav-link">
+                                <i class="bi bi-info-circle nav-icon"></i>Contact
+                            </a>
+                        </li>
+                        <li class="nav-item isLoggedOut">
+                            <a href="/login" class="nav-link">
+                                <i class="bi bi-box-arrow-in-right nav-icon"></i>Login
+                            </a>
+                        </li>
+                        <li class="nav-item isLoggedIn">
+                            <a href="#" class="nav-link logout-link">
+                                <i class="bi bi-box-arrow-left nav-icon"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-btns">
+                    <div class="nav-toggle" id="nav-toggle">
+                        <i class="bi bi-grid"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="bannerMob">
+            <div id="overlay">
+                <div id="profileHeader">
+                </div>
+            </div>
+        </div>
+
+        <form id="profileSummaryMob" action="/uploadProfile" enctype="multipart/form-data" method="POST">
+            <div id="profileDesc">
+                <div id="profileImageSec">
+                    <div id="profileImgContainer">
+                        <input type="file" accept="image/gif, image/jpeg, image/png, image/svg" name="profileFile"
+                            id="profileFile" />
+                        <img id="profileImage" src="../images/placeholder-profile.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="saveChanges">Save</button>
+        </form>
+
+        <div id="profileDetailsMob">
+            <form id="profileForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name"
+                            maxlength="15" required="required" onkeydown="return /[a-z]/i.test(event.key)">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name"
+                            maxlength="30" required="required" onkeydown="return /[a-z]/i.test(event.key)">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Username"
+                            value="tquimbayo" maxlength="30" required="required">
+                        <p id="usernameErrorMessage">&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="phone"
+                            value="7785555555" required="required" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
+                        <p id="phoneErrorMessage">&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                            value="towacurtis@hotmail.com" maxlength="30" required="required">
+                        <p id="emailErrorMessage">&nbsp;</p>
+                    </div>
+                </div>
+
+                <!-- Therapist Fields -->
+                <div class="form-row col-6 therapistOptions">
+                    <div class="form-group">
+                        <label for="yearsExperience">Years Of Experience</label>
+                        <input type="number" class="form-control" name="yearsExperience" id="yearsExperience"
+                            placeholder="years of experience" min="1" step="1" required="required">
+                    </div>
+                </div>
+
+                <div class="form-row col-6 therapistOptions">
+                    <div class="form-group">
+                        <label for="sessionCost">Session Cost</label>
+                        <input type="number" class="form-control" name="sessionCost" id="sessionCost"
+                            placeholder="cost per session" min="1" step="0.1" required="required">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Change Password</label>
+                        <div class="input-group" id="show-hide-password">
+                            <input type="password" placeholder="Password" name="password" class="form-control" id="password" minlength="5"
+                                maxlength="20">
+                            <div class="input-group-addon">
+                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p id="validationErrorMessage">&nbsp;</p>
+            </form>
+        </div>
+
+        <!-- Mobile Profile Update Success Modal -->
+        <div id="profileSuccessModal">
+            <div id="profileSuccessContainer">
+                <div id="profileSuccessBg">
+                    <svg viewBox="0 0 65 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 25L27.3077 44L58.5 7" stroke="white" stroke-width="13" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/account.js"></script>
+</body>
+
+</html>

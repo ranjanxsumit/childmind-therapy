@@ -1,0 +1,4395 @@
+:root {
+    --primaryColor: #09C5A3;
+    --secondaryColor: #00A98B;
+}
+
+@media (max-width: 575.98px) {
+    #wrapper #defaultContainer {
+        grid-row: 1 / span 1;
+        padding: 5rem 2rem 7rem;
+    }
+
+    #wrapper #defaultContainer h1 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    #wrapper #navPlaceHolder {
+        display: none;
+    }
+
+    #wrapper #header {
+        display: none;
+    }
+
+    #wrapper #headMobile {
+        display: block;
+        z-index: 9999;
+    }
+
+    #wrapper #headMobile .nav-container {
+        padding: 0 3rem;
+    }
+
+    #wrapper #headMobile .nav-container #footerNav {
+        font-size: 15px;
+    }
+
+    #wrapper #headMobile .nav-container .nav-btns .nav-toggle {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #headMobile .nav-container .nav-menu .nav-list .nav-item {
+        width: 50%;
+    }
+
+    #wrapper #footerPlaceHolder {
+        display: none;
+    }
+
+    #wrapper #therapistChat {
+        display: none;
+    }
+
+    #wrapper #signUp {
+        grid-row: 2 / span 1;
+        padding: 5rem 1.5rem;
+        margin-bottom: 5rem;
+    }
+
+    #wrapper #signUp h2 {
+        font-size: 2rem;
+    }
+
+    #wrapper #signUp #formContainer {
+        width: 100%;
+        padding: 4rem 2rem 2.5rem 2rem;
+    }
+
+    #wrapper #signUp #formContainer #signupForm .form-row.col-6 {
+        width: 100%;
+    }
+
+    #wrapper #loginContainer {
+        grid-row: 2 / span 1;
+        padding: 5rem 1.5rem;
+        flex-direction: column-reverse;
+    }
+
+    #wrapper #loginContainer .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper #loginContainer .col-6 h2 {
+        font-size: 2rem;
+    }
+
+    #wrapper #loginContainer .col-6 img {
+        padding-top: 5rem;
+        width: 80%;
+        padding-bottom: 3rem;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec #formContainer {
+        padding: 4rem 2rem 2.5rem 2rem;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec #formContainer #loginForm .form-row .form-group label {
+        text-align: left;
+    }
+
+    #wrapper #bannerHome {
+        grid-row: 1 / span 1;
+        background-attachment: scroll;
+        height: 100vh;
+    }
+
+    #wrapper #bannerHome #overlay {
+        height: 100vh;
+        background: rgba(2, 105, 86, 0.2);
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader {
+        padding: 0 3rem 7rem;
+        justify-content: end;
+        width: 100%;
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader h2 {
+        font-size: 2.2rem;
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader div {
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader div a {
+        text-align: center;
+        padding: 18px 0;
+        width: 100%;
+    }
+
+    #wrapper #therapySec {
+        grid-row: 2 / span 1;
+        padding: 7rem 3rem;
+    }
+
+    #wrapper #therapySec h2 {
+        font-size: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    #wrapper #therapySec #therapistCards {
+        flex-direction: column;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard {
+        padding: 3rem 2rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    #wrapper #therapySec #therapistCards .mainCard {
+        margin-bottom: 3rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard:first-child {
+        margin-right: 0;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard:nth-child(3) {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h2,
+    #wrapper #therapySec #therapistCards .mainCard h2 {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h2 span,
+    #wrapper #therapySec #therapistCards .mainCard span {
+        font-size: 1.3rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h4,
+    #wrapper #therapySec #therapistCards .mainCard h4 {
+        font-size: 1rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard div a {
+        font-size: 1rem;
+        padding: 16px 0;
+    }
+
+    #wrapper #companySec {
+        grid-row: 3 / span 1;
+        flex-direction: column-reverse;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    #wrapper #companySec div {
+        width: 100%;
+    }
+
+    #wrapper #companySec #companyDesc {
+        padding: 5rem 3rem;
+    }
+
+    #wrapper #companySec #companyDesc h2 {
+        font-size: 2rem;
+    }
+
+    #wrapper #companySec #companyDesc p {
+        font-size: 1rem;
+    }
+
+    #wrapper #companySec #companyDesc p:nth-child(3) {
+        padding-bottom: 0;
+    }
+
+    #wrapper #contactSec {
+        grid-row: 4 / span 1;
+        padding: 3rem 2rem 10rem;
+    }
+
+    #wrapper #contactSec #contactContainer {
+        flex-direction: column;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo,
+    #wrapper #contactSec #contactContainer #mapSec {
+        width: 100%;
+    }
+
+    #wrapper #contactSec #contactContainer #mapSec #map {
+        height: 250px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo {
+        padding: 2rem 2.5rem 1rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo h4 {
+        font-size: 0.8rem;
+        letter-spacing: 0.3rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo h2 {
+        font-size: 2.2rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails {
+        padding-bottom: 1.5rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails .contactIcons {
+        width: 3rem;
+        height: 2.7rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails .contactIcons i {
+        font-size: 1.3rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails a {
+        font-size: 1.1rem;
+        padding-left: 1rem;
+    }
+
+    #wrapper #banner {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #banner #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #banner #overlay #profileHeader {
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #wrapper #banner #overlay #profileHeader h2 {
+        display: none;
+    }
+
+    #wrapper #banner #overlay #profileHeader #editProfileBtn {
+        display: flex;
+        font-size: 16px;
+        min-width: 10rem;
+        padding: 10px;
+        height: 3.2rem;
+    }
+
+    #wrapper #profileSummary {
+        background: url('../images/radial-bg.svg');
+        background-position: center center;
+        background-repeat: repeat-y;
+        background-size: cover;
+        padding: 0 5rem 5rem;
+        margin-top: -5vh;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        height: 85vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 5;
+    }
+
+    #wrapper #profileSummary #profileDesc {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        position: absolute;
+        top: 16vh;
+        padding-bottom: 7rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #profileImageSecMob {
+        display: block;
+        padding: 0 27%;
+    }
+
+    #wrapper #profileSummary #profileDesc #profileImageSecMob #profileImgContainerMob #profileImageMob {
+        border-radius: 500px;
+        border: 7px solid white;
+        box-shadow: none;
+    }
+
+    #wrapper #profileSummary #profileDesc #displayFullname {
+        padding: 1rem 3rem 0.8rem;
+        font-size: 1.5rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #displayUsername {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--primaryColor);
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #contactInfoMob {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 2rem;
+        margin: 0 2rem 3rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #contactInfoMob div i {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #contactInfoMob div span {
+        font-size: 1rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #joinedDateMob {
+        display: block;
+    }
+
+    #wrapper #profileSummary #profileDesc #mobDeleteAccount {
+        display: inline-block;
+        padding: 16px 0;
+        width: 80%;
+        margin-top: 3rem;
+        margin-right: 0;
+    }
+
+    #wrapper #profileSummary #profileImageSec,
+    #wrapper #profileSummary #profileDesc p,
+    #wrapper #profileSummary #profileDesc #buttonSec,
+    #wrapper #profileDetails {
+        display: none;
+    }
+
+    #wrapper #bannerMob {
+        height: 30vh;
+    }
+
+    #wrapper #bannerMob #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #bannerMob #overlay #profileHeader {
+        padding: 3rem 2rem;
+    }
+
+    #wrapper #profileSummaryMob #profileDesc {
+        top: 16vh;
+    }
+
+    #wrapper #profileSummaryMob #saveChanges {
+        top: 3rem;
+        right: 2rem;
+        font-size: 16px;
+        min-width: 10rem;
+        padding: 10px;
+        height: 3.2rem;
+    }
+
+    #wrapper #profileSummaryMob #profileDesc #profileImageSec {
+        padding: 0 27%;
+    }
+
+    #wrapper #profileSummaryMob #profileDesc #profileImageSec #profileImgContainer #profileImage {
+        border: 7px solid white;
+    }
+
+    #wrapper #profileDetailsMob {
+        padding: 5rem 3rem 7rem;
+    }
+
+    #wrapper #profileDetailsMob #profileForm .form-row .form-group label {
+        font-size: 1rem;
+    }
+
+    #deleteAccountModal {
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+
+    #deleteAccountModal #modalContent {
+        padding: 2rem 1.5rem;
+        width: 90%;
+    }
+
+    #deleteAccountModal #modalContent h2 {
+        font-size: 1.2rem;
+    }
+
+    #deleteAccountModal #modalContent #deleteButtonsSec {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    #deleteAccountModal #modalContent #deleteButtonsSec #closeDelete {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+
+    #deleteAccountModal #modalContent #deleteButtonsSec #deleteAccountBtn {
+        padding: 12px;
+        width: 50%;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    #wrapper #bannerTherapist {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-background-repeat: no-repeat;
+        -moz-background-repeat: no-repeat;
+        -ms-background-repeat: no-repeat;
+        -o-background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
+    #wrapper #bannerTherapist #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #bannerTherapist #overlay #therapistHeader {
+        padding: 3rem;
+    }
+
+    #wrapper #bannerTherapist #overlay #therapistHeader h2 {
+        font-size: 2rem;
+    }
+
+    #wrapper #therapistListSec {
+        grid-row: 2 / span 1;
+        padding: 7rem 3rem;
+    }
+
+    #wrapper #therapistListSec h2 {
+        font-size: 1.7rem;
+    }
+
+    #wrapper #therapistListSec h4 {
+        font-size: 1rem;
+    }
+
+    #wrapper #therapistListSec #therapistList {
+        justify-content: center;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard img {
+        height: 300px;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent {
+        padding: 2rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent h3 {
+        font-size: 1.3rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent div .therapistBtn {
+        padding: 18px 0;
+        font-size: 1rem;
+    }
+
+    #wrapper #dashboardHeroContainer {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay #dashboardHero {
+        padding: 3rem;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay #dashboardHero h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #dashboardToolbar {
+        grid-row: 2 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #dashboardToolbar p {
+        width: 100%;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    #wrapper #dashboardToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 2rem 0 0;
+    }
+
+    #wrapper #dashboardToolbar #searchForm #searchbar {
+        padding: 1.5rem 2rem;
+    }
+
+    #wrapper #dashboardToolbar #createUser {
+        width: 100%;
+        order: 2;
+    }
+
+    #wrapper #tableContainer {
+        grid-row: 3 / span 1;
+        padding: 0 3rem 7rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable thead {
+        display: none;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody .tableRows {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(1):before {
+        content: 'First Name: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(2):before {
+        content: 'Last Name: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(3):before {
+        content: 'Username: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(4):before {
+        content: 'Email: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(5):before {
+        content: 'Phone: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(6):before {
+        content: 'User Type: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #deleteUserModal {
+        padding-top: 35%;
+        padding-bottom: 0%;
+    }
+
+    #createUserModal #modalContent,
+    #editUserModal #modalContent,
+    #deleteUserModal #modalContent {
+        padding: 2rem 1.5rem;
+        width: 90%;
+    }
+
+    #createUserModal #modalContent #modalHeader #closeCreate,
+    #editUserModal #modalContent #modalHeader #closeEdit {
+        font-size: 1.7rem;
+    }
+
+    #deleteUserModal #modalContent h2 {
+        font-size: 1.2rem;
+    }
+
+    #deleteUserModal #modalContent #deleteButtonsSec {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    #deleteUserModal #modalContent #deleteButtonsSec #deleteUserBtn {
+        padding: 12px;
+        width: 50%;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    #deleteUserModal #modalContent #deleteButtonsSec #closeDelete {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings,
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings.inactive {
+        padding: 10px;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings i {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon {
+        margin-left: -1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon.inactive {
+        margin-left: -1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon.active {
+        padding-left: 2rem;
+    }
+
+    @-webkit-keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @-ms-keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-ms-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    #createUserModal #modalContent #formContainer #createUserForm .form-row.col-6,
+    #editUserModal #modalContent #formContainer #editUserForm .form-row.col-6 {
+        width: 100%;
+    }
+
+    #deleteUserModal {
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+
+    #wrapper #bannerCheckout {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #bannerCheckout #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #bannerCheckout #overlay #checkoutHeader {
+        padding: 3rem;
+    }
+
+    #wrapper #bannerCheckout #overlay #checkoutHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #noOrderSummary {
+        padding: 7rem 3rem 7rem;
+    }
+
+    #wrapper #noOrderSummary #noOrderMessage {
+        font-size: 1rem;
+    }
+
+    #wrapper #orderSummary {
+        padding: 7rem 2rem 7rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec {
+        padding-bottom: 3rem;
+        flex-direction: column;
+    }
+
+    #wrapper #orderSummary #orderNumSec h2 {
+        font-size: 1.2rem;
+        padding-bottom: 3rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec h2 span {
+        padding-right: 0;
+    }
+
+    #wrapper #orderSummary #orderNumSec #printInvoice {
+        font-size: 1rem;
+        padding: 14px 0;
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader {
+        padding: 1.5rem 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3 {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(1) {
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(2),
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(3) {
+        display: none;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody {
+        flex-wrap: wrap;
+        padding: 3rem 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 5rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc {
+        padding: 0;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc h4 {
+        font-size: 1.5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc p {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc #removeItem {
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartImg {
+        width: 100%;
+        height: 100%;
+        padding-right: 0;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartImg img {
+        height: 300px;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc {
+        width: 100%;
+        height: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec p {
+        display: block;
+        text-align: left;
+        width: 50%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec #cartPlan {
+        background-position: calc(100% - 1rem) center !important;
+        width: 50%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec p:first-child {
+        display: block;
+        text-align: left;
+        padding-right: 0;
+        width: 50%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec p:nth-child(2) {
+        width: 50%;
+        padding: 1rem 0;
+    }
+
+    #wrapper #orderSummary #cartTotalSec {
+        padding: 3rem 0;
+    }
+
+    #wrapper #orderSummary #cartTotalSec #subTotalSec p,
+    #wrapper #orderSummary #cartTotalSec #taxSec p,
+    #wrapper #orderSummary #cartTotalSec #totalSec p {
+        width: 50%;
+        padding-right: 1.5rem;
+    }
+
+    #wrapper #orderSummary #cartTotalSec #subTotalSec span,
+    #wrapper #orderSummary #cartTotalSec #taxSec span,
+    #wrapper #orderSummary #cartTotalSec #totalSec span {
+        width: 50%;
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    #wrapper #cartExistModal,
+    #wrapper #therapySessionExistModal {
+        padding-top: 50%;
+    }
+
+    #wrapper #cartExistModal #modalContent,
+    #wrapper #therapySessionExistModal #modalContent {
+        width: 90%;
+        padding: 2rem 1.5rem;
+    }
+
+    #wrapper #cartExistModal #modalContent #closeCart,
+    #wrapper #therapySessionExistModal #modalContent #closeSession {
+        font-size: 1.7rem;
+    }
+
+    #wrapper #cartExistModal #modalContent h2,
+    #wrapper #therapySessionExistModal #modalContent h2 {
+        font-size: 1.8rem;
+    }
+
+    #wrapper #cartExistModal #modalContent p,
+    #wrapper #therapySessionExistModal #modalContent p {
+        font-size: 1rem;
+    }
+
+    #wrapper #notAuthorizedModal {
+        margin-top: 3%;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent #authorizedModalMessage {
+        max-width: 90%;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent #authorizedModalMessage h2,
+    #wrapper #notAuthorizedModal #modalContent #authorizedModalMessage p {
+        font-size: 14px;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent #closeAuthorized {
+        right: 1.5rem;
+    }
+
+    #wrapper #chatExpiredModal {
+        margin-top: 3%;
+    }
+
+    #wrapper #chatExpiredModal #modalContent {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #wrapper #chatExpiredModal #modalContent #chatExpiredModalMessage {
+        max-width: 90%;
+    }
+
+    #wrapper #chatExpiredModal #modalContent #chatExpiredModalMessage h2,
+    #wrapper #chatExpiredModal #modalContent #chatExpiredModalMessage p {
+        font-size: 14px;
+    }
+
+    #wrapper #chatExpiredModal #modalContent #closeChatExpired {
+        right: 1.5rem;
+    }
+
+    #removeOrderModal {
+        padding-top: 70%;
+        padding-bottom: 0%;
+    }
+
+    #removeOrderModal #modalContent {
+        padding: 2rem 1.5rem;
+        width: 90%;
+    }
+
+    #removeOrderModal #modalContent h2 {
+        font-size: 1.2rem;
+    }
+
+    #removeOrderModal #modalContent #removeButtonsSec #removeOrderBtn {
+        padding: 12px;
+        width: 50%;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    #removeOrderModal #modalContent #removeButtonsSec #cancelRemove {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+
+    #wrapper #thankyouContainer {
+        grid-row: 2 / span 1;
+        flex-direction: column-reverse;
+        padding: 5rem 3rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper #thankyouContainer .col-6 img {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        width: 100%;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #thankyouHeader {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #thankyouHeader h2 {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec p {
+        font-size: 1.1rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #startSession #startSessionBtn {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #wrapper #orderHistoryHeroContainer {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero {
+        padding: 3rem;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #noOrderHistorySummary {
+        grid-row: 2 / span 1;
+        padding: 7rem 3rem 7rem;
+    }
+
+    #wrapper #noOrderHistorySummary #noOrderMessage {
+        font-size: 1rem;
+    }
+
+    #wrapper #orderToolbar {
+        grid-row: 3 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #orderToolbar p {
+        width: 100%;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    #wrapper #orderToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 2rem 0 0;
+    }
+
+    #wrapper #orderToolbar #searchForm #searchbar {
+        padding: 1.5rem 2rem;
+    }
+
+    #wrapper #orderToolbar #refundBtn {
+        width: 100%;
+        order: 2;
+    }
+
+    #orderRefundModal {
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+
+    #orderRefundModal #modalContent {
+        padding: 2rem 1.5rem;
+        width: 90%;
+    }
+
+    #orderRefundModal #modalContent h2 {
+        font-size: 1.2rem;
+    }
+
+    #orderRefundModal #modalContent #refundButtonsSec {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    #orderRefundModal #modalContent #refundButtonsSec #closeRefund {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+
+    #orderRefundModal #modalContent #refundButtonsSec #orderRefundBtn {
+        padding: 12px;
+        width: 50%;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    #wrapper #orderTableContainer {
+        grid-row: 4 / span 1;
+        padding: 0 3rem 7rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable thead {
+        display: none;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody .tableRows {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody .tableRows td:first-child {
+        padding: 0.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody .tableRows td:last-child {
+        width: auto;
+        padding: 0.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(1):before {
+        content: 'Date: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(2):before {
+        content: 'Time: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(3):before {
+        content: 'Therapist: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(4):before {
+        content: 'Plan: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(5):before {
+        content: 'Price: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(6):before {
+        content: 'Order #: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(7):before {
+        content: 'Status: ';
+        color: black;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #batmanEasterEgg #batmanContainer {
+        bottom: 4rem;
+    }
+
+    #wrapper #batmanEasterEgg #batmanContainer #batmanImg {
+        width: 100%;
+    }
+
+    #wrapper #chatProfileSec {
+        padding: 1rem 2rem;
+        min-height: 5vh;
+    }
+
+    #wrapper #chatProfileSec #chatHeader #chatProfile div #chatImg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #wrapper #chatProfileSec #chatHeader #chatProfile #chatProfileDesc #chatName {
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+
+    #wrapper #chatProfileSec #chatHeader #chatProfile #chatProfileDesc p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    #wrapper #chatMessages {
+        height: 72vh;
+        padding: 3rem 1rem;
+    }
+
+    #wrapper #chatMessages li {
+        font-size: 14px;
+    }
+
+    #wrapper #sendMessageContainer {
+        padding: 0.5rem 1rem;
+    }
+
+    #wrapper #sendMessageContainer #chatbox {
+        font-size: 14px;
+    }
+
+    #wrapper #sendMessageContainer #sendMessage {
+        right: 2rem;
+        bottom: 1rem;
+    }
+
+    #wrapper #myPatientsHeroContainer {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay #myPatientsHero {
+        padding: 3rem;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay #myPatientsHero h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #noPatientsAvailable {
+        grid-row: 2 / span 1;
+        padding: 7rem 3rem 7rem;
+    }
+
+    #wrapper #noPatientsAvailable #noPatientsMessage {
+        font-size: 1rem;
+    }
+
+    #wrapper #patientToolbar {
+        grid-row: 3 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #patientToolbar p {
+        width: 100%;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    #wrapper #patientToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 2rem 0 0;
+    }
+
+    #wrapper #patientToolbar #searchForm #searchbar {
+        padding: 1.5rem 2rem;
+    }
+
+    #wrapper #patientTableContainer {
+        grid-row: 4 / span 1;
+        padding: 0 3rem 7rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable thead {
+        display: none;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody .tableRows {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody .tableRows td:first-child {
+        padding: 0.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody .tableRows td:last-child {
+        width: auto;
+        padding: 0.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(1):before {
+        content: 'Date: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(2):before {
+        content: 'Time: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(3):before {
+        content: 'Patient: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(4):before {
+        content: 'Plan: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(5):before {
+        content: 'Price: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(6):before {
+        content: 'Order #: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(7):before {
+        content: 'Status: ';
+        color: black;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #ErrorContainer {
+        padding: 5rem 3rem 7rem;
+        grid-row: 1 / span 1;
+    }
+
+    #wrapper #ErrorContainer #ErrorHeading h1 {
+        font-size: 7rem;
+    }
+
+    #wrapper #ErrorContainer #ErrorHeading img {
+        width: 8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #wrapper #ErrorContainer h2 {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #ErrorContainer p {
+        font-size: 1rem;
+    }
+
+    #wrapper #ErrorContainer #returnSection a {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #wrapper #defaultContainer {
+        grid-row: 1 / span 1;
+        padding: 5rem 3rem 7rem;
+    }
+
+    #wrapper #navPlaceHolder {
+        display: none;
+    }
+
+    #wrapper #header {
+        display: none;
+    }
+
+    #wrapper #headMobile {
+        display: block;
+        z-index: 9999;
+    }
+
+    #wrapper #headMobile .nav-container {
+        padding: 0 3rem;
+    }
+
+    #wrapper #footerPlaceHolder {
+        display: none;
+    }
+
+    #wrapper #therapistChat {
+        display: none;
+    }
+
+    #wrapper #signUp {
+        grid-row: 2 / span 1;
+        padding: 5rem 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #wrapper #signUp #formContainer {
+        width: 100%;
+        padding: 4rem 3rem 2.5rem 3rem;
+    }
+
+    #wrapper #signUp #formContainer #signupForm .form-row.col-6 {
+        width: 100%;
+    }
+
+    #wrapper #loginContainer {
+        grid-row: 2 / span 1;
+        padding: 5rem 3rem;
+        flex-direction: column-reverse;
+    }
+
+    #wrapper #loginContainer .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper #loginContainer .col-6 img {
+        padding-top: 5rem;
+        width: 50%;
+        padding-bottom: 3rem;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec h2 {
+        text-align: center;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec #formContainer {
+        padding: 4rem 3rem 2.5rem 3rem;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec #formContainer #loginForm .form-row .form-group label {
+        text-align: left;
+    }
+
+    #wrapper #bannerHome {
+        grid-row: 1 / span 1;
+        background-attachment: scroll;
+        height: 100vh;
+    }
+
+    #wrapper #bannerHome #overlay {
+        height: 100vh;
+        background: rgba(2, 105, 86, 0.2);
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader {
+        padding: 0 3rem 10rem;
+        justify-content: end;
+        width: 100%;
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader h2 {
+        font-size: 2.4rem;
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader div {
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader div a {
+        text-align: center;
+        padding: 18px 0;
+        width: 100%;
+    }
+
+    #wrapper #therapySec {
+        grid-row: 2 / span 1;
+        padding: 7rem 3rem;
+    }
+
+    #wrapper #therapySec h2 {
+        font-size: 2.5rem;
+        padding-bottom: 5rem;
+    }
+
+    #wrapper #therapySec #therapistCards {
+        flex-direction: column;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard {
+        padding: 3rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    #wrapper #therapySec #therapistCards .mainCard {
+        margin-bottom: 3rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard:first-child {
+        margin-right: 0;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard:nth-child(3) {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h2,
+    #wrapper #therapySec #therapistCards .mainCard h2 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h2 span,
+    #wrapper #therapySec #therapistCards .mainCard span {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h4,
+    #wrapper #therapySec #therapistCards .mainCard h4 {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard div a {
+        font-size: 1rem;
+        padding: 16px 0;
+    }
+
+    #wrapper #companySec {
+        grid-row: 3 / span 1;
+        flex-direction: column-reverse;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    #wrapper #companySec div {
+        width: 100%;
+    }
+
+    #wrapper #companySec #companyDesc {
+        padding: 5rem 3rem;
+    }
+
+    #wrapper #contactSec {
+        grid-row: 4 / span 1;
+        padding: 3rem 3rem 10rem;
+    }
+
+    #wrapper #contactSec #contactContainer {
+        flex-direction: column;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo,
+    #wrapper #contactSec #contactContainer #mapSec {
+        width: 100%;
+    }
+
+    #wrapper #contactSec #contactContainer #mapSec #map {
+        height: 300px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo {
+        padding: 3rem 3rem 2rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo h4 {
+        font-size: 0.8rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails {
+        padding-bottom: 1.5rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails .contactIcons {
+        width: 3rem;
+        height: 2.7rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails .contactIcons i {
+        font-size: 1.3rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails a {
+        font-size: 1.1rem;
+    }
+
+    #wrapper #banner {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 1;
+        height: 32vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #banner #overlay {
+        height: 32vh;
+    }
+
+    #wrapper #banner #overlay #profileHeader {
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #wrapper #banner #overlay #profileHeader h2 {
+        display: none;
+    }
+
+    #wrapper #banner #overlay #profileHeader #editProfileBtn {
+        display: flex;
+        font-size: 1rem;
+        min-width: 12rem;
+        padding: 10px;
+        height: 3.7rem;
+    }
+
+    #wrapper #profileSummary {
+        background: url('../images/radial-bg.svg');
+        background-position: center center;
+        background-repeat: repeat-y;
+        background-size: cover;
+        padding: 0 5rem 5rem;
+        margin-top: -5vh;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 5;
+    }
+
+    #wrapper #profileSummary #profileDesc {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        position: absolute;
+        top: 16vh;
+        padding-bottom: 7rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #profileImageSecMob {
+        display: block;
+        padding: 0 30%;
+    }
+
+    #wrapper #profileSummary #profileDesc #profileImageSecMob #profileImgContainerMob #profileImageMob {
+        border-radius: 500px;
+        border: 10px solid white;
+        box-shadow: none;
+    }
+
+    #wrapper #profileSummary #profileDesc #displayFullname {
+        padding-top: 1rem;
+        font-size: 1.7rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #displayUsername {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--primaryColor);
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #contactInfoMob {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 3rem;
+        margin: 0 3rem 3rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #joinedDateMob {
+        display: block;
+    }
+
+    #wrapper #profileSummary #profileDesc #mobDeleteAccount {
+        display: inline-block;
+        padding: 16px 0;
+        width: 80%;
+        margin-top: 3rem;
+        margin-right: 0;
+    }
+
+    #wrapper #profileSummary #profileImageSec,
+    #wrapper #profileSummary #profileDesc p,
+    #wrapper #profileSummary #profileDesc #buttonSec,
+    #wrapper #profileDetails {
+        display: none;
+    }
+
+    #wrapper #bannerMob {
+        height: 32vh;
+    }
+
+    #wrapper #bannerMob #overlay {
+        height: 32vh;
+    }
+
+    #wrapper #bannerMob #overlay #profileHeader {
+        padding: 3rem;
+    }
+
+    #wrapper #profileSummaryMob #profileDesc {
+        top: 16vh;
+    }
+
+    #wrapper #profileSummaryMob #profileDesc #profileImageSec {
+        padding: 0 30%;
+    }
+
+    #wrapper #profileDetailsMob {
+        padding: 5rem 3rem 7rem;
+    }
+
+    #wrapper #profileSummaryMob #saveChanges {
+        top: 3rem;
+        right: 3rem;
+        font-size: 1rem;
+        min-width: 12rem;
+        padding: 10px;
+        height: 3.7rem;
+    }
+
+    #deleteAccountModal {
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+
+    #deleteAccountModal #modalContent {
+        width: 80%;
+    }
+
+    #deleteAccountModal #modalContent h2 {
+        font-size: 1.3rem;
+    }
+
+    #deleteAccountModal #modalContent #deleteButtonsSec #closeDelete {
+        font-size: 1rem;
+    }
+
+    #deleteAccountModal #modalContent #deleteButtonsSec #deleteAccountBtn {
+        padding: 12px;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #wrapper #bannerTherapist {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-background-repeat: no-repeat;
+        -moz-background-repeat: no-repeat;
+        -ms-background-repeat: no-repeat;
+        -o-background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
+    #wrapper #bannerTherapist #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #bannerTherapist #overlay #therapistHeader {
+        padding: 3rem;
+    }
+
+    #wrapper #bannerTherapist #overlay #therapistHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #therapistListSec {
+        grid-row: 2 / span 1;
+        padding: 7rem 3rem;
+    }
+
+    #wrapper #therapistListSec h2 {
+        font-size: 2.2rem;
+    }
+
+    #wrapper #therapistListSec h4 {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #therapistListSec #therapistList {
+        justify-content: center;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard img {
+        height: 300px;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent {
+        padding: 2rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent h3 {
+        font-size: 1.7rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent div .therapistBtn {
+        padding: 18px 0;
+        font-size: 1.1rem;
+    }
+
+    #wrapper #dashboardHeroContainer {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay #dashboardHero {
+        padding: 3rem;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay #dashboardHero h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #dashboardToolbar {
+        grid-row: 2 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #dashboardToolbar p {
+        width: 50%;
+    }
+
+    #wrapper #dashboardToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 2rem 0 0;
+    }
+
+    #wrapper #dashboardToolbar #createUser {
+        width: 50%;
+        order: 2;
+    }
+
+    #wrapper #tableContainer {
+        grid-row: 3 / span 1;
+        padding: 0 3rem 7rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable thead {
+        display: none;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody .tableRows {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(1):before {
+        content: 'First Name: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(2):before {
+        content: 'Last Name: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(3):before {
+        content: 'Username: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(4):before {
+        content: 'Email: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(5):before {
+        content: 'Phone: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td:nth-child(6):before {
+        content: 'User Type: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #deleteUserModal {
+        padding-top: 30%;
+        padding-bottom: 0%;
+    }
+
+    #createUserModal #modalContent,
+    #editUserModal #modalContent,
+    #deleteUserModal #modalContent {
+        width: 80%;
+    }
+
+    #createUserModal #modalContent #modalHeader #closeCreate,
+    #editUserModal #modalContent #modalHeader #closeEdit {
+        font-size: 1.7rem;
+    }
+
+    #deleteUserModal #modalContent h2 {
+        font-size: 1.3rem;
+    }
+
+    #deleteUserModal #modalContent #deleteButtonsSec #deleteUserBtn {
+        padding: 12px;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #deleteUserModal #modalContent #deleteButtonsSec #closeDelete {
+        font-size: 1rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings,
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings.inactive {
+        padding: 10px;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings i {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon {
+        margin-left: -1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon.inactive {
+        margin-left: -1.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon.active {
+        padding-left: 2rem;
+    }
+
+    @-webkit-keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @-ms-keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @keyframes animateSlideClose {
+        from {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-ms-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.5rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 2rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    #createUserModal #modalContent #formContainer #createUserForm .form-row.col-6,
+    #editUserModal #modalContent #formContainer #editUserForm .form-row.col-6 {
+        width: 100%;
+    }
+
+    #deleteUserModal {
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+
+    #wrapper #bannerCheckout {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #bannerCheckout #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #bannerCheckout #overlay #checkoutHeader {
+        padding: 3rem;
+    }
+
+    #wrapper #bannerCheckout #overlay #checkoutHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #noOrderSummary {
+        padding: 7rem 3rem 7rem;
+    }
+
+    #wrapper #noOrderSummary #noOrderMessage {
+        font-size: 1rem;
+    }
+
+    #wrapper #orderSummary {
+        padding: 7rem 3rem 7rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec {
+        padding-bottom: 3rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec h2 {
+        font-size: 1.3rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec h2 span {
+        padding-right: 2rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec #printInvoice {
+        font-size: 1rem;
+        padding: 14px 36px;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3 {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(1) {
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(2),
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(3) {
+        display: none;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody {
+        flex-wrap: wrap;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 3rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc {
+        padding: 0;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc h4 {
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc p {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc #removeItem {
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartImg {
+        width: 100%;
+        height: 100%;
+        padding-right: 0;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartImg img {
+        height: 300px;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc {
+        width: 100%;
+        height: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding-right: 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec p {
+        display: block;
+        text-align: left;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec #cartPlan {
+        background-position: calc(100% - 1rem) center !important;
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding-left: 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec p:first-child {
+        display: block;
+        text-align: left;
+        padding-right: 0;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec p:nth-child(2) {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0;
+    }
+
+    #wrapper #orderSummary #cartTotalSec {
+        padding: 3rem 0;
+    }
+
+    #wrapper #cartExistModal,
+    #wrapper #therapySessionExistModal {
+        padding-top: 40%;
+    }
+
+    #wrapper #cartExistModal #modalContent,
+    #wrapper #therapySessionExistModal #modalContent {
+        width: 80%;
+    }
+
+    #wrapper #cartExistModal #modalContent #closeCart,
+    #wrapper #therapySessionExistModal #modalContent #closeSession {
+        font-size: 1.7rem;
+    }
+
+    #wrapper #notAuthorizedModal {
+        margin-top: 3%;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent {
+        width: 90%;
+        padding: 1rem 1.5rem;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent #authorizedModalMessage h2,
+    #wrapper #notAuthorizedModal #modalContent #authorizedModalMessage p {
+        font-size: 14px;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent #closeAuthorized {
+        right: 1.5rem;
+    }
+
+    #wrapper #chatExpiredModal {
+        margin-top: 3%;
+    }
+
+    #wrapper #chatExpiredModal #modalContent {
+        width: 90%;
+        padding: 1rem 1.5rem;
+    }
+
+    #wrapper #chatExpiredModal #modalContent #chatExpiredModalMessage h2,
+    #wrapper #chatExpiredModal #modalContent #chatExpiredModalMessage p {
+        font-size: 14px;
+    }
+
+    #wrapper #chatExpiredModal #modalContent #closeChatExpired {
+        right: 1.5rem;
+    }
+
+    #removeOrderModal {
+        padding-top: 30%;
+        padding-bottom: 0%;
+    }
+
+    #removeOrderModal #modalContent {
+        width: 80%;
+    }
+
+    #removeOrderModal #modalContent h2 {
+        font-size: 1.3rem;
+    }
+
+    #removeOrderModal #modalContent #removeButtonsSec #removeOrderBtn {
+        padding: 12px;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #removeOrderModal #modalContent #removeButtonsSec #cancelRemove {
+        font-size: 1rem;
+    }
+
+    #wrapper #thankyouContainer {
+        grid-row: 2 / span 1;
+        flex-direction: column-reverse;
+        padding: 5rem 3rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper #thankyouContainer .col-6 img {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        width: 70%;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #thankyouHeader {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #thankyouHeader h2 {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec p {
+        font-size: 1.1rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #startSession #startSessionBtn {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    #wrapper #orderHistoryHeroContainer {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero {
+        padding: 3rem;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #noOrderHistorySummary {
+        grid-row: 2 / span 1;
+        padding: 7rem 3rem 7rem;
+    }
+
+    #wrapper #noOrderHistorySummary #noOrderMessage {
+        font-size: 1rem;
+    }
+
+    #wrapper #orderToolbar {
+        grid-row: 3 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #orderToolbar p {
+        width: 50%;
+    }
+
+    #wrapper #orderToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 2rem 0 0;
+    }
+
+    #wrapper #orderToolbar #refundBtn {
+        width: 50%;
+        order: 2;
+    }
+
+    #orderRefundModal {
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+
+    #orderRefundModal #modalContent {
+        width: 80%;
+    }
+
+    #orderRefundModal #modalContent h2 {
+        font-size: 1.3rem;
+    }
+
+    #orderRefundModal #modalContent #refundButtonsSec #closeRefund {
+        font-size: 1rem;
+    }
+
+    #orderRefundModal #modalContent #refundButtonsSec #orderRefundBtn {
+        padding: 12px;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #wrapper #orderTableContainer {
+        grid-row: 4 / span 1;
+        padding: 0 3rem 7rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable thead {
+        display: none;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody .tableRows {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody .tableRows td:first-child {
+        padding: 0.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody .tableRows td:last-child {
+        width: auto;
+        padding: 0.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(1):before {
+        content: 'Date: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(2):before {
+        content: 'Time: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(3):before {
+        content: 'Therapist: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(4):before {
+        content: 'Plan: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(5):before {
+        content: 'Price: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(6):before {
+        content: 'Order #: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #orderTableContainer #orderTable tbody td:nth-child(7):before {
+        content: 'Status: ';
+        color: black;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #batmanEasterEgg #batmanContainer {
+        bottom: 4rem;
+    }
+
+    #wrapper #batmanEasterEgg #batmanContainer #batmanImg {
+        width: 100%;
+    }
+
+    #wrapper #chatProfileSec #chatHeader #chatProfile div #chatImg {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    #wrapper #chatProfileSec #chatHeader #chatProfile #chatProfileDesc #chatName {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    #wrapper #chatProfileSec #chatHeader #chatProfile #chatProfileDesc p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    #wrapper #myPatientsHeroContainer {
+        grid-row: 1 / span 1;
+        height: 30vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay {
+        height: 30vh;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay #myPatientsHero {
+        padding: 3rem;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay #myPatientsHero h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #noPatientsAvailable {
+        grid-row: 2 / span 1;
+        padding: 7rem 3rem 7rem;
+    }
+
+    #wrapper #noPatientsAvailable #noPatientsMessage {
+        font-size: 1rem;
+    }
+
+    #wrapper #patientToolbar {
+        grid-row: 3 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #patientToolbar p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper #patientToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 3rem 0 0;
+    }
+
+    #wrapper #patientTableContainer {
+        grid-row: 4 / span 1;
+        padding: 0 3rem 7rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable thead {
+        display: none;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody .tableRows {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody .tableRows td:first-child {
+        padding: 0.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody .tableRows td:last-child {
+        width: auto;
+        padding: 0.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(1):before {
+        content: 'Date: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(2):before {
+        content: 'Time: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(3):before {
+        content: 'Patient: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(4):before {
+        content: 'Plan: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(5):before {
+        content: 'Price: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(6):before {
+        content: 'Order #: ';
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #patientTableContainer #patientTable tbody td:nth-child(7):before {
+        content: 'Status: ';
+        color: black;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #wrapper #ErrorContainer {
+        padding: 5rem 5rem 7rem;
+        grid-row: 1 / span 1;
+    }
+
+    #wrapper #ErrorContainer #ErrorHeading h1 {
+        font-size: 10rem;
+    }
+
+    #wrapper #ErrorContainer #ErrorHeading img {
+        width: 12rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #wrapper #ErrorContainer h2 {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #ErrorContainer p {
+        font-size: 1rem;
+    }
+
+    #wrapper #ErrorContainer #returnSection a {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #wrapper #defaultContainer {
+        grid-row: 1 / span 1;
+        padding: 5rem 5rem 7rem;
+    }
+
+    #wrapper #navPlaceHolder {
+        display: none;
+    }
+
+    #wrapper #header {
+        display: none;
+    }
+
+    #wrapper #headMobile {
+        display: block;
+        z-index: 9999;
+    }
+
+    #wrapper #footerPlaceHolder {
+        display: none;
+    }
+
+    #wrapper #therapistChat {
+        display: none;
+    }
+
+    #wrapper #signUp {
+        grid-row: 2 / span 1;
+        padding: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    #wrapper #signUp #formContainer {
+        width: 100%;
+        padding: 4rem 4rem 2.5rem 4rem;
+    }
+
+    #wrapper #loginContainer {
+        grid-row: 2 / span 1;
+        padding: 5rem;
+        flex-direction: column-reverse;
+    }
+
+    #wrapper #loginContainer .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper #loginContainer .col-6 img {
+        padding-top: 5rem;
+        width: 70%;
+        padding-bottom: 3rem;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec h2 {
+        text-align: center;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec #formContainer {
+        padding: 4rem 4rem 2.5rem 4rem;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec #formContainer #loginForm .form-row .form-group label {
+        text-align: left;
+    }
+
+    #wrapper #bannerHome {
+        grid-row: 1 / span 1;
+        background-attachment: scroll;
+        height: 100vh;
+    }
+
+    #wrapper #bannerHome #overlay {
+        height: 100vh;
+        background: rgba(2, 105, 86, 0.2);
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader {
+        padding: 0 5rem 12rem;
+        justify-content: end;
+        width: 98%;
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #therapySec {
+        grid-row: 2 / span 1;
+        padding: 10rem 5rem;
+    }
+
+    #wrapper #therapySec h2 {
+        font-size: 2.5rem;
+        padding-bottom: 5rem;
+    }
+
+    #wrapper #therapySec #therapistCards {
+        flex-direction: column;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard {
+        padding: 3rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    #wrapper #therapySec #therapistCards .mainCard {
+        margin-bottom: 3rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard:first-child {
+        margin-right: 0;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard:nth-child(3) {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h2,
+    #wrapper #therapySec #therapistCards .mainCard h2 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h2 span,
+    #wrapper #therapySec #therapistCards .mainCard span {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h4,
+    #wrapper #therapySec #therapistCards .mainCard h4 {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard div a {
+        font-size: 1rem;
+        padding: 16px 0;
+    }
+
+    #wrapper #companySec {
+        grid-row: 3 / span 1;
+        flex-direction: column-reverse;
+        max-height: 100%;
+        width: 100%;
+    }
+
+    #wrapper #companySec div {
+        width: 100%;
+    }
+
+    #wrapper #companySec #companyDesc {
+        padding: 5rem;
+    }
+
+    #wrapper #contactSec {
+        grid-row: 4 / span 1;
+        padding: 3rem 5rem 10rem;
+    }
+
+    #wrapper #contactSec #contactContainer {
+        flex-direction: column;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo,
+    #wrapper #contactSec #contactContainer #mapSec {
+        width: 100%;
+    }
+
+    #wrapper #contactSec #contactContainer #mapSec #map {
+        height: 300px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo {
+        padding: 3rem 5rem 2rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails {
+        padding-bottom: 1rem;
+    }
+
+    #wrapper #banner {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 1;
+        height: 40vh;
+        background-attachment: scroll;
+    }
+
+    #wrapper #banner #overlay {
+        height: 40vh;
+    }
+
+    #wrapper #banner #overlay #profileHeader {
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #wrapper #banner #overlay #profileHeader h2 {
+        display: none;
+    }
+
+    #wrapper #banner #overlay #profileHeader #editProfileBtn {
+        display: flex;
+        font-size: 1rem;
+        min-width: 12rem;
+        padding: 10px;
+        height: 4rem;
+    }
+
+    #wrapper #profileSummary {
+        background: url('../images/radial-bg.svg');
+        background-position: center center;
+        background-repeat: repeat-y;
+        background-size: cover;
+        padding: 0 5rem 5rem;
+        margin-top: -5vh;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        height: 85vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 5;
+    }
+
+    #wrapper #profileSummary #profileDesc {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        position: absolute;
+        top: 20vh;
+        padding-bottom: 7rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #profileImageSecMob {
+        display: block;
+        padding: 0 35%;
+    }
+
+    #wrapper #profileSummary #profileDesc #profileImageSecMob #profileImgContainerMob #profileImageMob {
+        border-radius: 500px;
+        border: 10px solid white;
+        box-shadow: none;
+    }
+
+    #wrapper #profileSummary #profileDesc #displayFullname {
+        padding-top: 1rem;
+        font-size: 2rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #displayUsername {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--primaryColor);
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #contactInfoMob {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #wrapper #profileSummary #profileDesc #joinedDateMob {
+        display: block;
+    }
+
+    #wrapper #profileSummary #profileDesc #mobDeleteAccount {
+        display: inline-block;
+        padding: 16px 0;
+        width: 80%;
+        margin-top: 3rem;
+        margin-right: 0;
+    }
+
+    #wrapper #profileSummary #profileImageSec,
+    #wrapper #profileSummary #profileDesc p,
+    #wrapper #profileSummary #profileDesc #buttonSec,
+    #wrapper #profileDetails {
+        display: none;
+    }
+
+    #wrapper #profileSummaryMob #profileDesc {
+        top: 16vh;
+    }
+
+    #wrapper #profileSummaryMob #profileDesc #profileImageSec {
+        padding: 0 30%;
+    }
+
+    #deleteAccountModal {
+        padding-top: 30%;
+        padding-bottom: 0%;
+    }
+
+    #deleteAccountModal #modalContent {
+        width: 80%;
+    }
+
+    #deleteAccountModal #modalContent h2 {
+        font-size: 1.3rem;
+    }
+
+    #deleteAccountModal #modalContent #deleteButtonsSec #closeDelete {
+        font-size: 1rem;
+    }
+
+    #deleteAccountModal #modalContent #deleteButtonsSec #deleteAccountBtn {
+        padding: 12px;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #wrapper #bannerTherapist {
+        grid-row: 1 / span 1;
+        background-attachment: scroll;
+    }
+
+    #wrapper #bannerTherapist #overlay #therapistHeader {
+        padding: 5rem;
+    }
+
+    #wrapper #therapistListSec {
+        grid-row: 2 / span 1;
+        padding: 10rem 5rem 3rem;
+    }
+
+    #wrapper #therapistListSec h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #therapistListSec h4 {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard {
+        width: 45%;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard img {
+        height: 250px;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent {
+        padding: 2rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent h3 {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent div .therapistBtn {
+        padding: 16px 0;
+    }
+
+    #wrapper #dashboardHeroContainer {
+        grid-row: 1 / span 1;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay #dashboardHero {
+        padding: 5rem;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay #dashboardHero h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #dashboardToolbar {
+        grid-row: 2 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #dashboardToolbar p {
+        width: 50%;
+    }
+
+    #wrapper #dashboardToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 2rem 0 0;
+    }
+
+    #wrapper #dashboardToolbar #createUser {
+        width: 50%;
+        order: 2;
+    }
+
+    #wrapper #tableContainer {
+        grid-row: 3 / span 1;
+        padding: 0 2.5rem 7rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable thead #tableHeader th i {
+        padding-left: 0.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable thead th,
+    #wrapper #tableContainer #dashboardTable tbody td {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody .tableRows td:first-child {
+        padding-left: 1rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody .tableRows td:last-child {
+        padding-right: 1rem;
+    }
+
+    #deleteUserModal {
+        padding-top: 30%;
+        padding-bottom: 0%;
+    }
+
+    #createUserModal #modalContent,
+    #editUserModal #modalContent,
+    #deleteUserModal #modalContent {
+        width: 80%;
+    }
+
+    #createUserModal #modalContent #modalHeader #closeCreate,
+    #editUserModal #modalContent #modalHeader #closeEdit {
+        font-size: 1.7rem;
+    }
+
+    #deleteUserModal #modalContent h2 {
+        font-size: 1.3rem;
+    }
+
+    #deleteUserModal #modalContent #deleteButtonsSec #deleteUserBtn {
+        padding: 12px;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #deleteUserModal #modalContent #deleteButtonsSec #closeDelete {
+        font-size: 1rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings,
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings.inactive {
+        padding: 5px;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings i {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon {
+        margin-left: -1.2rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon.inactive {
+        margin-left: -1.2rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody td .dashSettings .settingIcon.active {
+        padding-left: 0.7rem;
+    }
+
+    @-webkit-keyframes animateSlideClose {
+        from {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes animateSlideClose {
+        from {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+    }
+
+    @-ms-keyframes animateSlideClose {
+        from {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes animateSlideClose {
+        from {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+    }
+
+    @keyframes animateSlideClose {
+        from {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+
+        to {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-ms-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes animateSlide {
+        from {
+            padding-left: 0;
+            margin-left: -1.2rem;
+            opacity: 0;
+        }
+
+        to {
+            padding-left: 0.7rem;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+
+    #wrapper #bannerCheckout {
+        grid-row: 1 / span 1;
+        background-attachment: scroll;
+    }
+
+    #wrapper #bannerCheckout #overlay #checkoutHeader {
+        padding: 5rem;
+    }
+
+    #wrapper #noOrderSummary {
+        padding: 7rem 5rem 7rem;
+    }
+
+    #wrapper #orderSummary {
+        padding: 7rem 5rem 7rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec h2 {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec #printInvoice {
+        font-size: 1rem;
+        padding: 14px 40px;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3 {
+        font-size: 1.3rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(1) {
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(2),
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(3) {
+        display: none;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody {
+        flex-wrap: wrap;
+        padding: 5rem 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 3rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc {
+        padding: 0;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc h4 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc p {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc #removeItem {
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartImg {
+        width: 100%;
+        height: 250px;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc {
+        width: 100%;
+        height: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding-right: 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec p {
+        display: block;
+        font-size: 1.1rem;
+        text-align: left;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec #cartPlan {
+        background-position: calc(100% - 1rem) center !important;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding-left: 1rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec p:first-child {
+        display: block;
+        font-size: 1.1rem;
+        text-align: left;
+        padding-right: 0;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec p:nth-child(2) {
+        width: 100%;
+        font-size: 1.1rem;
+        text-align: left;
+        padding: 1rem 0;
+    }
+
+    #wrapper #cartExistModal,
+    #wrapper #therapySessionExistModal {
+        padding-top: 30%;
+    }
+
+    #wrapper #cartExistModal #modalContent,
+    #wrapper #therapySessionExistModal #modalContent {
+        width: 80%;
+    }
+
+    #wrapper #notAuthorizedModal {
+        margin-top: 3%;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent {
+        width: 90%;
+    }
+
+    #wrapper #notAuthorizedModal #modalContent #closeAuthorized {
+        right: 2rem;
+    }
+
+    #wrapper #chatExpiredModal {
+        margin-top: 3%;
+    }
+
+    #wrapper #chatExpiredModal #modalContent {
+        width: 90%;
+    }
+
+    #wrapper #chatExpiredModal #modalContent #closeChatExpired {
+        right: 2rem;
+    }
+
+    #removeOrderModal {
+        padding-top: 30%;
+        padding-bottom: 0%;
+    }
+
+    #removeOrderModal #modalContent {
+        width: 80%;
+    }
+
+    #removeOrderModal #modalContent h2 {
+        font-size: 1.3rem;
+    }
+
+    #removeOrderModal #modalContent #removeButtonsSec #removeOrderBtn {
+        padding: 12px;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #removeOrderModal #modalContent #removeButtonsSec #cancelRemove {
+        font-size: 1rem;
+    }
+
+    #wrapper #thankyouContainer {
+        grid-row: 2 / span 1;
+        flex-direction: column-reverse;
+        padding: 5rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper #thankyouContainer .col-6 img {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        width: 70%;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #thankyouHeader {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #thankyouHeader h2 {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #startSession #startSessionBtn {
+        font-size: 1.1rem;
+        width: 60%;
+    }
+
+    #wrapper #orderHistoryHeroContainer {
+        grid-row: 1 / span 1;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero {
+        padding: 5rem;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #noOrderHistorySummary {
+        grid-row: 2 / span 1;
+        padding: 7rem 5rem 7rem;
+    }
+
+    #wrapper #orderToolbar {
+        grid-row: 3 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #orderToolbar p {
+        width: 50%;
+    }
+
+    #wrapper #orderToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 2rem 0 0;
+    }
+
+    #wrapper #orderToolbar #refundBtn {
+        width: 50%;
+        order: 2;
+    }
+
+    #orderRefundModal {
+        padding-top: 25%;
+        padding-bottom: 0%;
+    }
+
+    #orderRefundModal #modalContent {
+        width: 80%;
+    }
+
+    #orderRefundModal #modalContent h2 {
+        font-size: 1.3rem;
+    }
+
+    #orderRefundModal #modalContent #refundButtonsSec #closeRefund {
+        font-size: 1rem;
+    }
+
+    #orderRefundModal #modalContent #refundButtonsSec #orderRefundBtn {
+        padding: 12px;
+        width: 25%;
+        font-size: 1rem;
+    }
+
+    #wrapper #orderTableContainer {
+        grid-row: 4 / span 1;
+        padding: 0 2.5rem 7rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable thead #tableHeader th i {
+        padding-left: 0.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable thead th,
+    #wrapper #orderTableContainer #orderTable tbody td {
+        font-size: 12px;
+        padding: 1.5rem 0.5rem;
+    }
+
+    #wrapper #batmanEasterEgg #batmanContainer {
+        bottom: 4rem;
+    }
+
+    #wrapper #batmanEasterEgg #batmanContainer #batmanImg {
+        width: 100%;
+    }
+
+    #wrapper #myPatientsHeroContainer {
+        grid-row: 1 / span 1;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay #myPatientsHero {
+        padding: 5rem;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay #myPatientsHero h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #noPatientsAvailable {
+        grid-row: 2 / span 1;
+        padding: 7rem 5rem 7rem;
+    }
+
+    #wrapper #patientToolbar {
+        grid-row: 3 / span 1;
+        padding: 5rem 3rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    #wrapper #patientToolbar p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrapper #patientToolbar #searchForm {
+        width: 100%;
+        order: 3;
+        margin: 3rem 0 0;
+    }
+
+    #orderRefundModal {
+        padding-top: 25%;
+        padding-bottom: 0%;
+    }
+
+    #wrapper #patientTableContainer {
+        grid-row: 4 / span 1;
+        padding: 0 2.5rem 7rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable thead #tableHeader th i {
+        padding-left: 0.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable thead th,
+    #wrapper #patientTableContainer #patientTable tbody td {
+        font-size: 12px;
+        padding: 1.5rem 0.5rem;
+    }
+
+    #wrapper #ErrorContainer {
+        padding: 5rem 5rem 7rem;
+        grid-row: 1 / span 1;
+    }
+
+    #wrapper #ErrorContainer #ErrorHeading h1 {
+        font-size: 10rem;
+    }
+
+    #wrapper #ErrorContainer #ErrorHeading img {
+        width: 12rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #wrapper #ErrorContainer h2 {
+        font-size: 2rem;
+    }
+
+    #wrapper #ErrorContainer p {
+        font-size: 1rem;
+    }
+
+    #wrapper #ErrorContainer #returnSection a {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+    #wrapper #navPlaceHolder #headContainer {
+        padding: 1rem 5rem;
+    }
+
+    #wrapper #navPlaceHolder #headContainer #logo img {
+        width: 60px;
+    }
+
+    #wrapper #navPlaceHolder #headContainer #logo h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper #navPlaceHolder #headContainer #navbar #navMenu .navLinks {
+        padding-left: 1rem;
+        min-width: fit-content;
+    }
+
+    #wrapper #navPlaceHolder #headContainer #navbar #navMenu .navLinks a {
+        font-size: 14px;
+    }
+
+    #wrapper #navPlaceHolder #headContainer #navbar #navMenu .navLinks:not(:last-child) {
+        padding-right: 1rem;
+    }
+
+    #wrapper #navPlaceHolder #headContainer #navbar #navMenu .navLinks a.loginNav {
+        padding: 12px 36px;
+    }
+
+    #wrapper #navPlaceHolder #headContainer #navbar #navMenu .navLinks a.loginNav,
+    #wrapper #navPlaceHolder #headContainer #navbar #navMenu .navLinks input {
+        font-size: 14px;
+    }
+
+    #wrapper #bannerHome #overlay #homeHeader {
+        padding: 5rem;
+        width: 85%;
+    }
+
+    #wrapper #therapySec {
+        padding: 10rem 5rem;
+    }
+
+    #wrapper #therapySec h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard {
+        padding: 3rem 2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard:first-child {
+        margin-right: 2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard:nth-child(3) {
+        margin-left: 2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h2 {
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    #wrapper #therapySec #therapistCards .mainCard h2 {
+        font-size: 3.5rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h2 span {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .mainCard span {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard h4 {
+        font-size: 1rem;
+    }
+
+    #wrapper #therapySec #therapistCards .mainCard h4 {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #therapySec #therapistCards .therapyCard div a {
+        font-size: 1rem;
+        padding: 16px 0;
+    }
+
+    #wrapper #companySec {
+        max-height: 100%;
+    }
+
+    #wrapper #companySec #companyDesc {
+        padding: 5rem;
+    }
+
+    #wrapper #contactSec {
+        padding: 3rem 5rem 7rem;
+    }
+
+    #wrapper #contactSec #contactContainer {
+        min-height: 300px;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo {
+        padding: 3rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo h4 {
+        font-size: 0.8rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #contactSec #contactContainer #contactInfo .contactDetails {
+        padding-bottom: 1rem;
+    }
+
+    #wrapper #signUp {
+        padding: 5rem;
+    }
+
+    #wrapper #signUp #formContainer {
+        width: 100%;
+    }
+
+    #wrapper #loginContainer {
+        padding: 5rem;
+    }
+
+    #wrapper #loginContainer .col-6 #loginSec #formContainer #loginForm .form-row .form-group label {
+        text-align: left;
+    }
+
+    #wrapper #profileSummary #profileImageSec {
+        width: 40%;
+    }
+
+    #wrapper #profileSummary #profileDesc {
+        width: 60%;
+        padding-left: 3rem;
+    }
+
+    #wrapper #profileSummary #profileDesc p {
+        font-size: 1rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #buttonSec #deleteAccount {
+        padding: 18px 0;
+        min-width: 12rem;
+        font-size: 1rem;
+    }
+
+    #wrapper #profileSummary #profileDesc #buttonSec #saveChanges {
+        padding: 18px 0;
+        min-width: 12rem;
+        font-size: 1rem;
+    }
+
+    #deleteAccountModal {
+        padding-top: 25%;
+        padding-bottom: 0%;
+    }
+
+    #deleteAccountModal #modalContent {
+        width: 80%;
+    }
+
+    #wrapper #bannerTherapist #overlay #therapistHeader {
+        padding: 5rem;
+    }
+
+    #wrapper #therapistListSec {
+        padding: 10rem 4rem 3rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent {
+        padding: 2rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent h3 {
+        font-size: 1.2rem;
+    }
+
+    #wrapper #therapistListSec #therapistList .therapistCard .cardContent div .therapistBtn {
+        padding: 16px 0;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay #dashboardHero {
+        padding: 5rem;
+    }
+
+    #wrapper #dashboardHeroContainer #overlay #dashboardHero h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #dashboardToolbar {
+        padding: 5rem;
+    }
+
+    #wrapper #dashboardToolbar p {
+        width: 25%;
+    }
+
+    #wrapper #dashboardToolbar #searchForm {
+        width: 55%;
+    }
+
+    #wrapper #dashboardToolbar #createUser {
+        width: 20%;
+    }
+
+    #wrapper #tableContainer {
+        padding: 0 5rem 5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable thead #tableHeader th i {
+        padding-left: 0.5rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable thead th,
+    #wrapper #tableContainer #dashboardTable tbody td {
+        font-size: 14px;
+        padding: 0.7rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody .tableRows td:first-child {
+        padding-left: 1rem;
+    }
+
+    #wrapper #tableContainer #dashboardTable tbody .tableRows td:last-child {
+        padding-right: 1rem;
+    }
+
+    #deleteUserModal {
+        padding-top: 25%;
+        padding-bottom: 0%;
+    }
+
+    #createUserModal #modalContent,
+    #editUserModal #modalContent,
+    #deleteUserModal #modalContent {
+        width: 80%;
+    }
+
+    #wrapper #bannerCheckout #overlay #checkoutHeader {
+        padding: 5rem;
+    }
+
+    #wrapper #noOrderSummary {
+        padding: 10rem 5rem 5rem;
+    }
+
+    #wrapper #orderSummary {
+        padding: 10rem 5rem 5rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec h2 {
+        font-size: 1.5rem;
+    }
+
+    #wrapper #orderSummary #orderNumSec #printInvoice {
+        font-size: 1.1rem;
+        padding: 14px 50px;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3 {
+        font-size: 1.3rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(1) {
+        width: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(2),
+    #wrapper #orderSummary #orderTable #tableHeader h3:nth-child(3) {
+        display: none;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody {
+        flex-wrap: wrap;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 5rem;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartImg {
+        width: 100%;
+        height: 250px;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #orderReview #cartDesc {
+        width: 100%;
+        height: 100%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec p {
+        display: block;
+        width: 50%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartPlanSec #cartPlan {
+        background-position: calc(100% - 1rem) center !important;
+        width: 50%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec p:first-child {
+        display: block;
+        width: 60%;
+    }
+
+    #wrapper #orderSummary #orderTable #tableBody #cartCostSec p:nth-child(2) {
+        width: 40%;
+        text-align: left;
+    }
+
+    #wrapper #cartExistModal,
+    #wrapper #therapySessionExistModal {
+        padding-top: 20%;
+    }
+
+    #wrapper #cartExistModal #modalContent,
+    #wrapper #therapySessionExistModal #modalContent {
+        width: 80%;
+    }
+
+    #removeOrderModal {
+        padding-top: 25%;
+        padding-bottom: 0%;
+    }
+
+    #removeOrderModal #modalContent {
+        width: 80%;
+    }
+
+    #wrapper #thankyouContainer {
+        padding: 5rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #thankyouHeader {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #thankyouHeader h2 {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    #wrapper #thankyouContainer .col-6 #thankyouSec #startSession #startSessionBtn {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+
+    #wrapper #noOrderHistorySummary {
+        padding: 10rem 5rem 5rem;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero {
+        padding: 5rem;
+    }
+
+    #wrapper #orderHistoryHeroContainer #overlay #orderHistoryHero h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #orderToolbar {
+        padding: 5rem;
+    }
+
+    #wrapper #orderToolbar p {
+        width: 25%;
+    }
+
+    #wrapper #orderToolbar #searchForm {
+        width: 55%;
+    }
+
+    #wrapper #orderToolbar #refundBtn {
+        width: 20%;
+    }
+
+    #wrapper #orderTableContainer {
+        padding: 0 5rem 5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable thead #tableHeader th i {
+        padding-left: 0.5rem;
+    }
+
+    #wrapper #orderTableContainer #orderTable thead th,
+    #wrapper #orderTableContainer #orderTable tbody td {
+        font-size: 14px;
+    }
+
+    #orderRefundModal {
+        padding-top: 25%;
+        padding-bottom: 0%;
+    }
+
+    #orderRefundModal #modalContent {
+        width: 80%;
+    }
+
+    #wrapper #noPatientsAvailable {
+        padding: 10rem 5rem 5rem;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay #myPatientsHero {
+        padding: 5rem;
+    }
+
+    #wrapper #myPatientsHeroContainer #overlay #myPatientsHero h2 {
+        font-size: 3rem;
+    }
+
+    #wrapper #patientToolbar {
+        padding: 5rem;
+    }
+
+    #wrapper #patientToolbar p {
+        width: 25%;
+    }
+
+    #wrapper #patientToolbar #searchForm {
+        width: 75%;
+    }
+
+    #wrapper #patientTableContainer {
+        padding: 0 5rem 5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable thead #tableHeader th i {
+        padding-left: 0.5rem;
+    }
+
+    #wrapper #patientTableContainer #patientTable thead th,
+    #wrapper #patientTableContainer #patientTable tbody td {
+        font-size: 14px;
+    }
+
+    #wrapper #ErrorContainer {
+        padding: 5rem 5rem 7rem;
+    }
+
+    #wrapper #ErrorContainer #ErrorHeading h1 {
+        font-size: 10rem;
+    }
+
+    #wrapper #ErrorContainer #ErrorHeading img {
+        width: 12rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #wrapper #ErrorContainer h2 {
+        font-size: 2rem;
+    }
+
+    #wrapper #ErrorContainer p {
+        font-size: 1rem;
+    }
+
+    #wrapper #ErrorContainer #returnSection a {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 2500px) {
+    #wrapper #therapistChat {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    #wrapper #therapistChat.expand {
+        width: 30rem;
+        height: 45rem;
+    }
+
+    #wrapper #therapistChat #chatMsgIcon {
+        font-size: 3rem;
+    }
+
+    #wrapper #therapistChat .chatContainer #chatMessages li {
+        font-size: 1.1rem;
+    }
+
+    #wrapper #therapistChat .chatContainer #sendMessageContainer #chatbox {
+        font-size: 1.1rem;
+        height: 4rem;
+    }
+
+    #wrapper #therapistChat .chatContainer #sendMessageContainer #sendMessage {
+        height: 2.5rem;
+        width: 2.5rem;
+        bottom: 1.6rem;
+    }
+}

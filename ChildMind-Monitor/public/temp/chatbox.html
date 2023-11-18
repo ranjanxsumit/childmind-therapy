@@ -1,0 +1,30 @@
+<i class="fa fa-comments" id="chatMsgIcon" aria-hidden="true"></i>
+<div class="chatContainer">
+    <div id="chatHeader">
+        <div id="chatProfile">
+            <div>
+                <img id="chatImg" src="" alt="Profile Picture of Therapist / Patient" />
+            </div>
+            <div id="chatProfileDesc">
+                <p id="chatName"></p>
+                <p id="chatActiveState">Offline</p>
+            </div>
+        </div>
+        <div id="chatTools">
+            <a id="chatPhone" href=""><i class="bi bi-telephone-fill"></i></a>
+            <button id="closeChat">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <ul id="chatMessages">
+        <span id="sessionTimer"></span>
+    </ul>
+    <div id="sendMessageContainer">
+        <textarea id="chatbox" maxlength="250" contenteditable="true" disabled="true" wrap="soft"
+            placeholder="Message..."></textarea>
+        <button id="sendMessage">
+            <img src="./images/send.svg">
+        </button>
+    </div>
+</div>
